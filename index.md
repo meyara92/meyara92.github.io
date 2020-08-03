@@ -32,9 +32,10 @@
 
         <div class="row">
             <div class="col-lg-12 text-center" style="margin-top:100px">
-                <h2 class="lead">Entrega Ejercicio Web Institucional - Belluccia III</h2>
-                <h1>Nombre y Apellido</h1>
-                <p style="margin-top:50px">
+                <h2 class="lead">Corrección 03/08 - Ejercicio Web Institucional - Belluccia III</h2>
+                <h1>Melanie Arakaki</h1>
+                <p style="margin-top:50px"></p>
+                <p style="margin-top:20px">
                     <a class="btn btn-primary btn-lg" href="ArakakiMelanie_Comision2_PuraCepa/index.html">Sitio desarrollado</a> 
                     <a class="btn btn-default btn-lg" href="ArakakiMelanie_Comision2_TemplateOriginal/demo-coworking.html">Template utilizado 1 (estructura base)</a>
                     <a class="btn btn-default btn-lg" href="ArakakiMelanie_Comision2_TemplateOriginal/rs-demo-premium-mountain-parallax.html">Template utilizado 2 (hero)</a>
