@@ -112,7 +112,7 @@
 
 
 body,
-.dropdown-menu { font-size: 0.875rem; }
+.dropdown-menu { font-size: 1rem; }
 
 
 /* ----------------------------------------------------------------
@@ -11351,7 +11351,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 .heading-block h3 + span,
 .heading-block h4 + span { font-size: 20px; }
 
-.heading-block ~ p:not(.lead) { font-size: 15px; }
+.heading-block ~ p:not(.lead) { font-size: 1rem; }
 
 .heading-block:after {
 	content: '';
@@ -12117,7 +12117,7 @@ button.toast-close-button {
 .copyright-links a {
 	display: inline-block;
 	margin: 0 3px;
-	color: #333;
+	color: #FFF;
 	border-bottom: 1px dotted #444;
 }
 

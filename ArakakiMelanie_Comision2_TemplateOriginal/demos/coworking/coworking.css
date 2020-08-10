@@ -411,7 +411,7 @@ ul.list-numbers li {
 	padding: 20px;
 }
 
-.footer-img { margin-top: -90px; }
+.footer-img { margin-top: -90px; float: left;}
 
 /* Responsive Device less than 768px (.device-sm <)
 -----------------------------------------------------------------*/

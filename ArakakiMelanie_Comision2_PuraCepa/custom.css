@@ -51,7 +51,7 @@ h1, h2, h3, h4 {
 }
 
 #primary-menu ul li > a {
-    color: #FFF;
+    color: #4C2A45;
 }
 
 #primary-menu ul li:hover > a, #primary-menu ul li.current > a {
@@ -156,7 +156,7 @@ a {
 
 #header.sticky-header #header-wrap
 {
-    background-color: #231422;
+    background-color: #FFF;
 }
 
 .card-img-overlay:before {
@@ -164,5 +164,12 @@ a {
 }
 
 #copyrights {
-    background-color: #fffbeb;
+    background-color: #231422;
+}
+
+.footer-img-div {
+    background-image: url("images/footer-bg.jpg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
