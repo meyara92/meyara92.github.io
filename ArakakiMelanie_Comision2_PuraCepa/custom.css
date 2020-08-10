@@ -96,51 +96,6 @@ a {
 .demos-filter li a:hover,
 .demos-filter li.activeFilter a { color: #eda79f; }
 
-@media (max-width: 991px) {
-    .demos-filter { text-align: center; }
-
-    .demos-filter li {
-        float: left;
-        width: 33.3%;
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 767px) { .demos-filter li { width: 50%; } }
-
-@media (max-width: 400px) { 
-    #slide-126-layer-2 {
-        font-size: 32pt !important;
-    }
-
-    #slide-126-layer-1 {
-        width: 300px;
-    }
-
-    .hero-features {
-        transform: translateY(-50%);
-        padding: 40px 30px;
-        max-width: 100%;
-        margin-left: auto;
-        border-radius: 0;
-        border: none;
-    }
-
-    #logo-footer {
-        border: none !important;
-        float: none !important;
-    }
-
-    #header.transparent-header, #header.semi-transparent {
-    background: #231422;
-    border-bottom: 1px solid #231422;
-    z-index: auto;
-    }
-
-    .icon-reorder {
-        color: #fff;
-    }
-}
 
 /*
 #rev_slider_52_1_wrapper .tp-loader.spinner3 { background-color: #FFFFFF !important; }
@@ -172,4 +127,62 @@ a {
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: bottom right;
+}
+
+@media (max-width: 991px) {
+    .demos-filter { text-align: center; }
+
+    .demos-filter li {
+        float: left;
+        width: 33.3%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 767px) { .demos-filter li { width: 50%; } }
+
+@media (max-width: 400px) { 
+    #slide-126-layer-2 {
+        font-size: 32pt !important;
+    }
+
+    #slide-126-layer-1 {
+        width: 300px;
+    }
+
+    #price-container {
+        background-image: none;
+    }
+
+    .footer-img-div {
+        background-image: none !important;
+    }
+
+    .slider-img{
+        display: none;
+    }
+
+    .hero-features {
+        transform: translateY(-50%);
+        padding: 40px 30px;
+        max-width: 100%;
+        margin-left: auto;
+        border-radius: 0;
+        border: none;
+    }
+
+    #logo-footer {
+        border: none !important;
+        float: none !important;
+    }
+
+    #header.transparent-header, #header.semi-transparent {
+    background: #FFF;
+    border-bottom: 1px solid #231422;
+    z-index: auto;
+    }
+
+    .icon-reorder {
+        color: #231422;
+    }
 }
