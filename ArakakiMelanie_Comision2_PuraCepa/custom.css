@@ -40,7 +40,13 @@
     background-color: #472e45 !important;
 }
 
-h1, h2, h3, h4 {
+h1 {
+    font-family: 'Moranga Medium';
+    color: #231422;
+    font-size: 48px !important;
+}
+
+h2, h3, h4 {
     font-family: 'Moranga Medium';
     line-height: 1.2;
     color: #eda79f;

@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="demos/crowdfunding/css/fonts.css" type="text/css" />
 	<link rel="stylesheet" href="demos/coworking/css/fonts.css" type="text/css" /> <!-- Theme Font -->
 	<link rel="stylesheet" href="demos/coworking/coworking.css" type="text/css" /> <!-- Theme CSS -->
+	<link rel="stylesheet" href="css/onepage.css" type="text/css" />
 	<link rel="stylesheet" href="custom.css" type="text/css" /> <!-- Theme CSS -->
 	<!-- / -->
 
@@ -50,7 +51,7 @@
 	============================================= -->
 	<div id="wrapper" class="clearfix">
 
-				<!-- Header
+		<!-- Header
 		============================================= -->
 		<header id="header" class="transparent-header sticky">
 
@@ -71,15 +72,22 @@
 					============================================= -->
 					<nav id="primary-menu">
 
-						<ul>
+						<!--<ul>
 							<li class="current"><a href="index.html"><div>Inicio</div></a>
 							</li>
-							<li><a href="previous-boxes.html"><div>Cajas anteriores</div></a>
+							<li><a href="#como-funciona"><div>Cómo funciona</div></a>
 							</li>
 							<li><a href="about.html"><div>Quiénes somos</div></a>
 							</li>
 							<li><a href="contact.html"><div>Contacto</div></a>
 							</li>
+						</ul>-->
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+							<li><a href="#" data-href="#wrapper"><div>Inicio</div></a></li>
+							<li><a href="#" data-href="#how-it-works"><div>Cómo funciona</div></a></li>
+							<li><a href="#" data-href="#price-container"><div>Planes</div></a></li>
+							<li><a href="#" data-href="#faqs"><div>Preguntas frecuentes</div></a></li>
+							<li><a href="#" data-href="#contact"><div>Contacto</div></a></li>
 						</ul>
 
 					</nav><!-- #primary-menu end -->
@@ -117,7 +125,7 @@
 		<!-- Content
 		============================================= -->
 		<section id="content">
-			<div class="bg-theme-light section">
+			<div id="how-it-works" class="bg-theme-light section">
 				<div class="container">
 					<div class="heading-block center mx-auto" style="max-width: 700px">
 						<h2 class="mb-2 nott ls0">¿Cómo funciona Pura Cepa Club?</h2>
@@ -357,7 +365,7 @@
 											  <li class="list-group-item pl-0 text-black-50"><i class="icon-line-check pr-3 color"></i> <del>Regalo sorpresa</del></li>
 											</ul>
 
-											<a href="subscription-detail-2.html" class="button button-rounded button-large btn-block m-0 center t500" style="background-color: #7c5e6a;">Ver detalles</a>
+											<a href="subscription-detail-1.html" class="button button-rounded button-large btn-block m-0 center t500" style="background-color: #7c5e6a;">Ver detalles</a>
 
 										</div>
 									</div>
@@ -382,7 +390,7 @@
 											  <li class="list-group-item pl-0"><i class="icon-line-check pr-3 color"></i> Cajas coleccionables</li>
 											</ul>
 
-											<a href="subscription-detail-3.html" class="button button-rounded button-large btn-block m-0 center t500" style="background-color: #543c52;">Ver detalles</a>
+											<a href="subscription-detail-1.html" class="button button-rounded button-large btn-block m-0 center t500" style="background-color: #543c52;">Ver detalles</a>
 
 										</div>
 									</div>
@@ -723,7 +731,7 @@
 	
 				</div>
 
-				<div class="section mb-0 pb-0 bg-theme-light clearfix" style="padding-top: 120px;">
+				<div id="contact" class="section mb-0 pb-0 bg-theme-light clearfix" style="padding-top: 120px;">
 					<div class="container" style="margin-bottom: 300px;">
 						<div class="row">
 							<div class="col-md-12 footer-img-div">

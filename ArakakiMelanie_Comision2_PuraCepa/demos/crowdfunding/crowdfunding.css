@@ -73,12 +73,6 @@ body.top-search-open #header .button { opacity: 0; }
 	transform: translateY(-50%);
 }
 
-.slider-title h1 {
-	font-size: 46px;
-	line-height: 62px;
-	letter-spacing: -1px;
-}
-
 .slider-title p {
 	font-size: 15px;
 	line-height: 26px;
