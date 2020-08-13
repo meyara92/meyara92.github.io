@@ -3373,7 +3373,6 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	width: auto !important;
 	top: 50% !important;
 	left: auto !important;
-	right: 15px !important;
 	margin: -10px 0 0 0 !important;
 	background-color: transparent !important;
 	padding: 0 !important;

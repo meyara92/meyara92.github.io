@@ -186,3 +186,11 @@ a {
         color: #231422;
     }
 }
+
+#page-title {
+    position: relative;
+    padding: 24px 0;
+    background-color: #FFF;
+    border-bottom: 1px solid #EEE;
+    font-size: 1em;
+}
