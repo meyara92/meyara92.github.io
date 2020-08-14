@@ -24,8 +24,37 @@
     background-color: #fffbeb;
 }
 
-#featured-section {
-    background-color: white;
+.bg-theme-accent{
+    background-color: #7EC99D;
+}
+
+.button {
+    background-color: #73336E;
+}
+
+.button-rounded {
+    border-radius: 100px !important;
+}
+
+#featured-section h2 {
+    color: #FFF;
+    letter-spacing: 1px;
+}
+
+#featured-section p {
+    color: #FFF;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-text {
+    color: black !important;
+    font-weight: 400 !important;
+    font-size: 1em !important;
+}
+
+.card h4 {
+    color: #472e45;
 }
 
 #benefits-container {
