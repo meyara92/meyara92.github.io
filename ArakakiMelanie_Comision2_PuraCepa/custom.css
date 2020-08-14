@@ -79,18 +79,18 @@
 
 h1 {
     font-family: 'Moranga Medium';
-    color: #231422;
+    color: #4C2A45;
     font-size: 48px;
 }
 
 h2, h3, h4 {
     font-family: 'Moranga Medium';
     line-height: 1.2;
-    color: #eda79f;
+    color: #4C2A45;
 }
 
 .card-title {
-    color: #231422;
+    color: #4C2A45;
 }
 
 #primary-menu ul li > a {
@@ -128,12 +128,24 @@ h2, h3, h4 {
     color: #444;
 }
 
+.feature-box p {
+    margin: 8px 0 0 0;
+    color: #333333;
+}
+
 a {
     color: #eda79f;
 }
 
 .owl-carousel .owl-dots .owl-dot {
     background-color: #eda79f;
+}
+
+.slider-title p {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #333;
 }
 
 .demos-filter li a:hover,
