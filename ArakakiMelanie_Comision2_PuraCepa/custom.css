@@ -7,21 +7,49 @@
 @font-face {
     font-family: 'Moranga Medium';
 	src:url('fonts/Latinotype\ -\ Moranga\ Medium.otf');
-	font-weight: normal;
+	font-weight: 500;
 }
 
 @font-face {
     font-family: 'Moranga Bold';
 	src:url('fonts/Latinotype\ -\ Moranga\ Bold.otf');
-	font-weight: normal;
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Recoleta Medium';
+	src:url('fonts/Recoleta-Medium.ttf');
+	font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Recoleta SemiBold';
+	src:url('fonts/Recoleta-SemiBold.ttf');
+	font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Recoleta Bold';
+	src:url('fonts/Recoleta-Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Recoleta Black';
+	src:url('fonts/Recoleta-Black.ttf');
+	font-weight: bolder;
 }
 
 .section {
     background-color: #fff;
 }
 
+.bg-theme-lighter {
+    background-color: #FFF5F4;
+}
+
 .bg-theme-light{
-    background-color: #fffbeb;
+    background-color: #FFFBEA;
 }
 
 .bg-theme-accent{
@@ -36,6 +64,12 @@
     border-radius: 100px !important;
 }
 
+#featured-section {
+    background-image: url(images/benefits-bg-img-1.png), url(images/benefits-bg-img-2.png);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
+}
+
 #featured-section h2 {
     color: #FFF;
     letter-spacing: 1px;
@@ -45,6 +79,27 @@
     color: #FFF;
     font-weight: 600;
     line-height: normal;
+}
+
+#members-gallery {
+    background-image: url(images/gallery-bg-img-1.png), url(images/gallery-bg-img-2.png);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+}
+
+#members-gallery h2 {
+    color: #FFF;
+    letter-spacing: 1px;
+}
+
+#members-gallery p {
+    color: #FFF;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#slider-container {
+    padding: 0;
 }
 
 .card-text {
@@ -57,14 +112,57 @@
     color: #472e45;
 }
 
+.pricing-button{ 
+    display:none;
+}
+
+.pricing-card:hover .pricing-button {
+    display: block;
+}
+
+.pricing-card:hover .card {
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.20);
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+}
+
+.pricing-card: .card {
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.20);
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.pricing {
+    height: 530px;
+}
+
+
+/*.pricing-card {
+    transition: all .2s ease-in-out;
+}
+.pricing-card :hover{
+    transform: scale(1.02);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.20);
+}*/
+
 #benefits-container {
     background-color: white;
 }
 
 #price-container {
-    background-image: url(images/wine-stains.png);
-    background-position: right bottom;
+    background-image: url(images/price-bg-img-1.png), url(images/price-bg-img-2.png);
+    background-position: left top, right bottom;
     background-repeat: no-repeat;
+}
+
+#price-container h3 {
+    margin: 30px 0 10px 0;
+}
+
+.price-currency {
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 36px;
 }
 
 .svg-curve {
@@ -78,13 +176,13 @@
 }
 
 h1 {
-    font-family: 'Moranga Medium';
+    font-family: 'Recoleta Bold';
     color: #4C2A45;
-    font-size: 48px;
+    font-size: 60px;
 }
 
 h2, h3, h4 {
-    font-family: 'Moranga Medium';
+    font-family: 'Recoleta Medium';
     line-height: 1.2;
     color: #4C2A45;
 }
@@ -102,12 +200,34 @@ h2, h3, h4 {
 }
 
 .before-heading {
-    background-color: #e0d6de;
-    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.before-dark {
+    background-color:#FFF5F4;
+    border-radius: 20px;
+    text-transform: uppercase;
 }
 
 .heading-block h1, .heading-block h2, .heading-block h3, .heading-block h4, .emphasis-title h1, .emphasis-title h2 {
     color: #472e45;
+}
+
+.section {
+    margin: 30px 0;
+}
+
+.section-price {
+    margin: 0 0;
+}
+
+.testi-content p {
+    line-height: 1.5;
+    font-size: 15px;
+    color:#444;
+    font-style: normal;
 }
 
 .demos-filter {
@@ -177,13 +297,6 @@ a {
     background-color: #231422;
 }
 
-.footer-img-div {
-    background-image: url("images/footer-bg.jpg");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-}
-
 @media (max-width: 991px) {
     .demos-filter { text-align: center; }
 
@@ -194,8 +307,23 @@ a {
     }
 }
 
-@media (max-width: 767px) { .demos-filter li { width: 50%; } }
+@media (max-width: 767px) { 
+    .demos-filter li { 
+        width: 50%; 
+    }
+}
 
+@media (min-width: 992px) {
+    .slider-title h1 {
+        font-size: 64px;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+
+/*    #suscription-img-1, #suscription-img-2, #suscription-img-3 {
+        display: none;
+    }     */
+}
 
 @media (max-width: 400px) { 
     #slide-126-layer-2 {
@@ -210,8 +338,12 @@ a {
         background-image: none;
     }
 
-    .footer-img-div {
-        background-image: none !important;
+    #contact {
+        margin-bottom: 120px !important;
+    }
+
+    #footer-img {
+        display: none !important;
     }
 
     .slider-img{
@@ -259,4 +391,18 @@ a {
     background-color: #FFF;
     border-bottom: 1px solid #EEE;
     font-size: 1em;
+}
+
+/* Suscription-pages*/
+
+.promo-section::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    width: 80%;
+    height: 451px;
+    background-size: 1280px 451px;
+    background-repeat: no-repeat;
+    background-image: url(images/hero-3.svg);
 }

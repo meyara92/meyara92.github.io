@@ -4,6 +4,9 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
+	<link rel="icon" 
+	type="image/png" 
+	href="images/favicon.png">
 
 	<!-- Stylesheets
 	============================================= -->
@@ -25,6 +28,8 @@
 		<link rel="stylesheet" href="demos/crowdfunding/css/fonts.css" type="text/css" />
 		<link rel="stylesheet" href="demos/coworking/css/fonts.css" type="text/css" /> <!-- Theme Font -->
 		<link rel="stylesheet" href="demos/coworking/coworking.css" type="text/css" /> <!-- Theme CSS -->
+		<link rel="stylesheet" href="demos/movers/movers.css" type="text/css" />
+		<link rel="stylesheet" href="css/onepage.css" type="text/css" />
 		<link rel="stylesheet" href="custom.css" type="text/css" /> <!-- Theme CSS -->
 
 	<!-- Document Title
@@ -41,7 +46,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header sticky">
+		<header id="subscription-header" class="transparent-header no-sticky" style="background-color: #A17B9F; color: #FFFFFF;">
 
 			<div id="header-wrap">
 
@@ -52,9 +57,21 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo-dark.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo-dark@2x.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+						<ul class="one-page-menu">
+							<li><a href="index.html#wrapper"><div>Inicio</div></a></li>
+							<li><a href="index.html#how-it-works"><div>Cómo funciona</div></a></li>
+							<li><a href="index.html#price-container"><div>Suscripción</div></a></li>
+							<li><a href="index.html#faqs"><div>Preguntas frecuentes</div></a></li>
+							<li><a href="index.html#contact"><div>Contacto</div></a></li>
+						</ul>
+					</nav><!-- #primary-menu end -->
 
 				</div>
 
@@ -64,280 +81,271 @@
 
 		<!-- Page Title
 		=============================================-->
-		<section id="page-title">
-			<nav id="primary-menu">
-
-				<!--<ul>
-					<li class="current"><a href="index.html"><div>Inicio</div></a>
-					</li>
-					<li><a href="#como-funciona"><div>Cómo funciona</div></a>
-					</li>
-					<li><a href="about.html"><div>Quiénes somos</div></a>
-					</li>
-					<li><a href="contact.html"><div>Contacto</div></a>
-					</li>
-				</ul>-->
-				<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
-					<li><a href="#" data-href="#wrapper"><div>Inicio</div></a></li>
-					<li><a href="#" data-href="#how-it-works"><div>Cómo funciona</div></a></li>
-					<li><a href="#" data-href="#price-container"><div>Planes</div></a></li>
-					<li><a href="#" data-href="#faqs"><div>Preguntas frecuentes</div></a></li>
-					<li><a href="#" data-href="#contact"><div>Contacto</div></a></li>
-				</ul>
-
-			</nav><!-- #primary-menu end -->
+		<section id="page-title" style="background-color: #A17B9F;">
 			<div class="container clearfix">
 				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html#price-container">Volver atrás</a></li>
+					<li class="breadcrumb-item"><a href="index.html#price-container" style="color: #FFFFFF;">Volver atrás</a></li>
 				</ol>
 			</div>
 
 		</section><!--#page-title end -->
 
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element bg-color" style="height: auto; padding: 60px 0; background-color: #A17B9F;">
+
+			<div class="container" style="z-index: 2">
+				<!--<div class="center">
+					<h2 class="text-white h2 font-weight-semibold mb-2">Welcome to the Canvas Packers and Movers.</h2>
+					<p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aperiam.</p>
+				</div>-->
+				<div class="row justify-content-end">
+					<div class="col-lg-6">
+						<div class="tab-content rounded-bottom shadow bg-white py-4 px-5">
+							<div class="tab-pane fade show active" id="home-moving" role="tabpanel" aria-labelledby="home-moving-tab">
+								<h1 class="mb-0">Un gustito</h1>
+								<h3 class="mb-4">Un buen punto de partida</h3>
+								<p class="mb-4">Shift to your new Home, So we're here. Please send us your Deatils &amp; our team will contact your email asap.</p>
+								<div class="form-widget">
+									<div class="form-result"></div>
+									<form class="row home-moving-form position-relative mb-0" action="include/form.php" method="post" enctype="multipart/form-data">
+										<div class="form-process">
+											<div class="css3-spinner">
+												<div class="css3-spinner-scaler"></div>
+											</div>
+										</div>
+
+										<div class="col-sm-6 input-group form-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text bg-transparent"><i class="icon-truck1"></i></span>
+											</div>
+											<input type="text" name="home-moving-form-location-from" id="home-moving-form-location-from" class="form-control required" value="" placeholder="Location From">
+										</div>
+
+										<div class="col-sm-6 input-group form-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text bg-transparent"><i class="icon-line2-map"></i></span>
+											</div>
+											<input type="text" name="home-moving-form-location-to" id="home-moving-form-location-to" class="form-control required" value="" placeholder="Location To">
+										</div>
+
+										<div class="col-sm-6 input-group form-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text bg-transparent"><i class="icon-line2-user"></i></span>
+											</div>
+											<input type="text" name="home-moving-form-name" id="home-moving-form-name" class="form-control required" value="" placeholder="Your Full Name">
+										</div>
+
+										<div class="col-sm-6 input-group form-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text bg-transparent"><i class="icon-line2-envelope"></i></span>
+											</div>
+											<input type="email" name="home-moving-form-email" id="home-moving-form-email" class="form-control required" value="" placeholder="Your Email">
+										</div>
+
+										<div class="col-sm-6 input-group form-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text bg-transparent"><i class="icon-line2-call-out"></i></span>
+											</div>
+											<input type="text" name="home-moving-form-phone" id="home-moving-form-phone" class="form-control required" value="" placeholder="Your Phone Number">
+										</div>
+
+										<div class="col-sm-6 input-group form-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text bg-transparent"><i class="icon-line2-calendar"></i></span>
+											</div>
+											<input type="text" class="form-control home-date required" name="home-moving-form-date" id="home-moving-form-date" value="" placeholder="Your Date">
+										</div>
+
+										<div class="col-12 d-none">
+											<input type="text" id="home-moving-form-botcheck" name="home-moving-form-botcheck" value="" />
+										</div>
+
+										<div class="col-12">
+											<button type="submit" name="home-moving-form-submit" class="button button-large button-rounded text-white font-weight-medium btn-block py-2 mt-2">Ver detalles</button>
+										</div>
+										<input type="hidden" name="prefix" value="home-moving-form-">
+										<input type="hidden" name="subject" value="Home Moving Request">
+										<input type="hidden" name="html_title" value="Home Moving">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 d-none d-lg-flex flex-wrap justify-content-center">
+						<img src="images/subscriptions/suscription-1.jpg" alt="Image 1" class="d-flex align-self-end" style="width: 500px;">
+					</div>
+				</div>
+			</div>
+
+			<!--<div class="svg-separator">
+				<div>
+					<svg preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 100" data-height="100">
+						<path style="opacity: 1;fill: rgba(255,255,255,0.75);" d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
+						C979.5,96,980,56,1040,56z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.75);" d="M1699.8,96l0,10H1946l-0.3-6.9c0,0,0,0-88,0s-88.6-58.8-176.5-58.8c-51.4,0-73,20.1-99.6,36.8 c14.5,9.6,29.6,18.9,58.4,18.9C1699.8,96,1699.8,96,1699.8,96z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.75);" d="M1400,96c19.5,0,32.7-4.3,43.7-10c-35.2-17.3-54.1-45.7-115.5-45.7c-32.3,0-52.8,7.9-70.2,17.8 c6.4-1.3,13.6-2.1,22-2.1C1340.1,56,1340.3,96,1400,96z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.75);" d="M320,56c6.6,0,12.4,0.5,17.7,1.3c-17-9.6-37.3-17-68.5-17c-60.4,0-79.5,27.8-114,45.2 c11.2,6,24.6,10.5,44.8,10.5C260,96,259.9,56,320,56z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.75);" d="M680,96c23.7,0,38.1-6.3,50.5-13.9C699.6,64.8,679,40.3,622.2,40.3c-30,0-49.8,6.8-66.3,15.8 c1.3,0,2.7-0.1,4.1-0.1C619.7,56,620.2,96,680,96z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.75);" d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
+						z"></path>
+						<path style="opacity: 1;fill: rgba(255,255,255,0.3);;" d="M504,73.4c-2.6-0.8-5.7-1.4-9.6-1.4c-19.4,0-19.6,13-39,13c-19.4,0-19.5-13-39-13c-14,0-18,6.7-26.3,10.4 C402.4,89.9,416.7,96,440,96C472.5,96,487.5,84.2,504,73.4z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.3);;" d="M1205.4,85c-0.2,0-0.4,0-0.6,0c-19.5,0-19.5-13-39-13s-19.4,12.9-39,12.9c0,0-5.9,0-12.3,0.1 c11.4,6.3,24.9,11,45.5,11C1180.6,96,1194.1,91.2,1205.4,85z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.3);;" d="M1447.4,83.9c-2.4,0.7-5.2,1.1-8.6,1.1c-19.3,0-19.6-13-39-13s-19.6,13-39,13c-3,0-5.5-0.3-7.7-0.8 c11.6,6.6,25.4,11.8,46.9,11.8C1421.8,96,1435.7,90.7,1447.4,83.9z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.3);;" d="M985.8,72c-17.6,0.8-18.3,13-37,13c-19.4,0-19.5-13-39-13c-18.2,0-19.6,11.4-35.5,12.8 c11.4,6.3,25,11.2,45.7,11.2C953.7,96,968.5,83.2,985.8,72z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.3);;" d="M743.8,73.5c-10.3,3.4-13.6,11.5-29,11.5c-19.4,0-19.5-13-39-13s-19.5,13-39,13c-0.9,0-1.7,0-2.5-0.1 c11.4,6.3,25,11.1,45.7,11.1C712.4,96,727.3,84.2,743.8,73.5z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.3);;" d="M265.5,72.3c-1.5-0.2-3.2-0.3-5.1-0.3c-19.4,0-19.6,13-39,13c-19.4,0-19.6-13-39-13 c-15.9,0-18.9,8.7-30.1,11.9C164.1,90.6,178,96,200,96C233.7,96,248.4,83.4,265.5,72.3z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.3);;" d="M1692.3,96V85c0,0,0,0-19.5,0s-19.6-13-39-13s-19.6,13-39,13c-0.1,0-0.2,0-0.4,0c11.4,6.2,24.9,11,45.6,11 C1669.9,96,1684.8,96,1692.3,96z"></path> <path style="opacity: 1;fill: rgba(255,255,255,0.3);;" d="M25.5,72C6,72,6.1,84.9-13.5,84.9L-20,85v8.9C0.7,90.1,12.6,80.6,25.9,72C25.8,72,25.7,72,25.5,72z"></path>
+						<path style="fill: rgb(255, 255, 255);" d="M-40,95.6C20.3,95.6,20.1,56,80,56s60,40,120,40s59.9-40,120-40s60.3,40,120,40s60.3-40,120-40s60.2,40,120,40s60.1-40,120-40s60.5,40,120,40s60-40,120-40s60.4,40,120,40s59.9-40,120-40s60.3,40,120,40s60.2-40,120-40s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z"></path>
+					</svg>
+					<div class="bg-white" style="height: 150px"></div>
+				</div>
+			</div>-->
+
+		</section>
+		
 		<!-- Content
 		============================================= -->
+		
 		<section id="content">
-
+			<div class="section section-features bg-theme-lighter mt-0 clearfix">
+					<div class="container clearfix">
+						<div class="row col-mb-50 col-mb-lg-80">
+							<div class="col-md-4">
+								<div class="feature-box media-box">
+									<div class="fbox-icon position-relative mb-4">
+										<i class="icon-paw"></i>
+									</div>
+									<div class="fbox-content">
+										<h3 class="font-weight-semibold">Pet Shifting.</h3>
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="feature-box media-box">
+									<div class="fbox-icon position-relative mb-4" style="background-image: url('demos/movers/images/featured-img/1.jpg');">
+										<i class="icon-car"></i>
+									</div>
+									<div class="fbox-content">
+										<h3 class="font-weight-semibold">Car Shifting.</h3>
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="feature-box media-box">
+									<div class="fbox-icon position-relative mb-4">
+										<i class="icon-truck1"></i>
+									</div>
+									<div class="fbox-content">
+										<h3 class="font-weight-semibold">Hire Truck.</h3>
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			<div class="content-wrap">
 
 				<div class="container clearfix">
 
-					<div class="single-product">
-
-						<div class="product">
-
-							<div class="col_two_fifth">
-
-								<!-- Product Single - Gallery
-								============================================= -->
-								<div class="product-image" style="overflow: visible;">
-									<div id="oc-images" class="owl-carousel image-carousel carousel-widget" data-lightbox="gallery" data-margin="0" data-items="1" data-pagi="false" data-autoplay="6000" data-loop="true">
-										<div class="oc-item">
-											<a href="images/shop/dress/3.jpg" title="Pink Printed Dress - Front View" data-lightbox="gallery-item"><img src="images/shop/dress/3.jpg" alt="Pink Printed Dress"></a>
-										</div>
-										<div class="oc-item">
-											<a href="images/shop/dress/3-1.jpg" title="Pink Printed Dress - Side View" data-lightbox="gallery-item"><img src="images/shop/dress/3-1.jpg" alt="Pink Printed Dress"></a>
-										</div>
-										<div class="oc-item">
-											<a href="images/shop/dress/3-2.jpg" title="Pink Printed Dress - Back View" data-lightbox="gallery-item"><img src="images/shop/dress/3-2.jpg" alt="Pink Printed Dress"></a>
-										</div>
-									</div>
-									<div class="sale-flash">Sale!</div>
-								</div><!-- Product Single - Gallery End -->
-
-								<div id="linked-to-gallery" style="margin-top: 4px;">
-									<div id="oc-images-linker" class="owl-carousel image-carousel carousel-widget" data-margin="4" data-items="4" data-pagi="false" data-loop="true">
-										<div class="oc-item">
-											<a href="#" data-image="1"><img class="image_fade" src="images/shop/thumbs/dress/3.jpg" alt="Gallery Thumb 1"></a>
-										</div>
-										<div class="oc-item">
-											<a href="#" data-image="2"><img class="image_fade" src="images/shop/thumbs/dress/3-1.jpg" alt="Gallery Thumb 2"></a>
-										</div>
-										<div class="oc-item">
-											<a href="#" data-image="3"><img class="image_fade" src="images/shop/thumbs/dress/3-2.jpg" alt="Gallery Thumb 3"></a>
-										</div>
-										<div class="oc-item">
-											<a href="#" data-image="3"><img class="image_fade" src="images/shop/thumbs/dress/3-2.jpg" alt="Gallery Thumb 3"></a>
-										</div>
-									</div>
-								</div>
-
+					<div class="row justify-content-center mb-5">
+						<div class="col-lg-7 center">
+							<div class="heading-block">
+								<h3 class="nott mb-3 font-weight-semibold ls0">¿Qué viene adentro de la caja?</h3>
+								<span class="text-black-50">Un pequeño vistazo a la experiencia que te proponemos.</span>
 							</div>
+						</div>
 
-							<div class="col_two_fifth product-desc">
-
-								<!-- Product Single - Price
-								============================================= -->
-								<h2 style="margin-bottom:0px;">Un gustito</h2><!-- Product Single - Price End -->
-								<h5>UN BUEN PUNTO DE PARTIDA</h5>
-								<div class="product-price"><del>$39.99</del> <ins>$24.99</ins></div><!-- Product Single - Price End -->
-
-								<!-- Product Single - Rating
-								============================================= -->
-								<div class="product-rating">
-									<i class="icon-star3"></i>
-									<i class="icon-star3"></i>
-									<i class="icon-star3"></i>
-									<i class="icon-star-half-full"></i>
-									<i class="icon-star-empty"></i>
-								</div><!-- Product Single - Rating End -->
-
-								<div class="clear"></div>
-								<div class="line"></div>
-
-								<!-- Product Single - Quantity & Cart Button
-								============================================= -->
-								<form class="cart nobottommargin clearfix" method="post" enctype='multipart/form-data'>
-									<div class="quantity clearfix">
-										<input type="button" value="-" class="minus">
-										<input type="text" step="1" min="1"  name="quantity" value="1" title="Qty" class="qty" size="4" />
-										<input type="button" value="+" class="plus">
-									</div>
-									<button type="submit" class="add-to-cart button nomargin">Add to cart</button>
-								</form><!-- Product Single - Quantity & Cart Button End -->
-
-								<div class="clear"></div>
-								<div class="line"></div>
-
-								<!-- Product Single - Short Description
-								============================================= -->
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero velit id eaque ex quae laboriosam nulla optio doloribus! Perspiciatis, libero, neque, perferendis at nisi optio dolor!</p>
-								<p>Perspiciatis ad eveniet ea quasi debitis quos laborum eum reprehenderit eaque explicabo assumenda rem modi.</p>
-								<ul class="iconlist">
-									<li><i class="icon-caret-right"></i> Dynamic Color Options</li>
-									<li><i class="icon-caret-right"></i> Lots of Size Options</li>
-									<li><i class="icon-caret-right"></i> 30-Day Return Policy</li>
-								</ul><!-- Product Single - Short Description End -->
-
-								<!-- Product Single - Meta
-								============================================= -->
-								<div class="card product-meta">
-									<div class="card-body">
-										<span itemprop="productID" class="sku_wrapper">SKU: <span class="sku">8465415</span></span>
-										<span class="posted_in">Category: <a href="#" rel="tag">Dress</a>.</span>
-										<span class="tagged_as">Tags: <a href="#" rel="tag">Pink</a>, <a href="#" rel="tag">Short</a>, <a href="#" rel="tag">Dress</a>, <a href="#" rel="tag">Printed</a>.</span>
-									</div>
-								</div><!-- Product Single - Meta End -->
-
-								<!-- Product Single - Share
-								============================================= -->
-								<div class="si-share noborder clearfix">
-									<span>Share:</span>
-									<div>
-										<a href="#" class="social-icon si-borderless si-facebook">
-											<i class="icon-facebook"></i>
-											<i class="icon-facebook"></i>
-										</a>
-										<a href="#" class="social-icon si-borderless si-twitter">
-											<i class="icon-twitter"></i>
-											<i class="icon-twitter"></i>
-										</a>
-										<a href="#" class="social-icon si-borderless si-pinterest">
-											<i class="icon-pinterest"></i>
-											<i class="icon-pinterest"></i>
-										</a>
-										<a href="#" class="social-icon si-borderless si-gplus">
-											<i class="icon-gplus"></i>
-											<i class="icon-gplus"></i>
-										</a>
-										<a href="#" class="social-icon si-borderless si-rss">
-											<i class="icon-rss"></i>
-											<i class="icon-rss"></i>
-										</a>
-										<a href="#" class="social-icon si-borderless si-email3">
-											<i class="icon-email3"></i>
-											<i class="icon-email3"></i>
-										</a>
-									</div>
-								</div><!-- Product Single - Share End -->
-
+						<div class="col-lg-8">
+							<div class="row align-items-center">
+								<div class="col-sm-6">
+									<img src="demos/movers/images/others/4.png" alt="Image 1">
+								</div>
+								<div class="col-sm-6">
+									<h3>3 vinos seleccionados de 350ml.</h3>
+									<p class="mb-2">Una medida especialmente pensada para que puedas degustar los mejores vinos al mejor precio. Las etiquetas varían mes a mes acorde a tus preferencias, y además te envíamos una ficha para conocer más sobre la variedad.</p>
+								</div>
 							</div>
-
-							<div class="col_one_fifth col_last">
-
-								<a href="#" title="Brand Logo" class="d-none d-md-block"><img class="image_fade" src="images/shop/brand.jpg" alt="Brand Logo"></a>
-
-								<div class="divider divider-center"><i class="icon-circle-blank"></i></div>
-
-								<div class="feature-box fbox-plain fbox-dark fbox-small">
-									<div class="fbox-icon">
-										<i class="icon-thumbs-up2"></i>
-									</div>
-									<h3>100% Original</h3>
-									<p class="notopmargin">We guarantee you the sale of Original Brands.</p>
+							<div class="row align-items-center mt-5">
+								<div class="col-sm-6 mb-4 mb-sm-0">
+									<h3>Carta de maridaje y degustación</h3>
+									<p class="mb-2">Para que puedas disfrutar la experiencia Pura Cepa al máximo, incluímos una carta con sugerencias para acompañar los vinos y resaltar aún más su sabor. Vas a encontrar también recomendaciones y descuentos de lugares a donde comprar la comida.</p>
 								</div>
-
-								<div class="feature-box fbox-plain fbox-dark fbox-small">
-									<div class="fbox-icon">
-										<i class="icon-credit-cards"></i>
-									</div>
-									<h3>Payment Options</h3>
-									<p class="notopmargin">We accept Visa, MasterCard and American Express.</p>
+								<div class="col-sm-6">
+									<img src="demos/movers/images/others/2.png" alt="Image 1">
 								</div>
-
-								<div class="feature-box fbox-plain fbox-dark fbox-small">
-									<div class="fbox-icon">
-										<i class="icon-truck2"></i>
-									</div>
-									<h3>Free Shipping</h3>
-									<p class="notopmargin">Free Delivery to 100+ Locations on orders above $40.</p>
-								</div>
-
-								<div class="feature-box fbox-plain fbox-dark fbox-small">
-									<div class="fbox-icon">
-										<i class="icon-undo"></i>
-									</div>
-									<h3>30-Days Returns</h3>
-									<p class="notopmargin">Return or exchange items purchased within 30 days.</p>
-								</div>
-
 							</div>
+							<div class="row align-items-center mt-5">
+								<div class="col-sm-6">
+									<img src="demos/movers/images/others/1.png" alt="Image 1">
+								</div>
+								<div class="col-sm-6">
+									<h3>Una experiencia personalizada</h3>
+									<p class="mb-2">Los vinos de tu primera caja son seleccionados en base a tus gustos que descubrimos en la encuesta de bienvenida. Luego, podés calificar cada vino y actualizamos tus próximas selecciones en base a tus gustos y a tus nuevas preferencias.</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
+				</div>
+				<!-- Promo/Contact
+				============================================= -->
+				<div class="section mt-5 promo-section nobg mt-5" style="padding: 200px 0; overflow: visible">
+					<div class="container">
+						<div class="heading-block nobottomborder center">
+							<h5 class="uppercase ls1 mb-1">¿Ya estás adentro?</h5>
+							<h2 class="nott ls0">Todo esto por solo <strong>$700</strong> por mes.<br>Suscribite. Tu caja te está esperando.</h2>
+							<a href="#" class="button button-large button-rounded nott ml-0 ls0 mt-4">Suscribirme</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="section bg-theme-light clearfix">
+					<div class="container clearfix" style="margin-bottom: 400px;">
+
+						<div class="heading-block mx-auto border-bottom-0 center clearfix" style="max-width: 600px">
+							<small class="text-black-50 text-uppercase ls3 font-weight-semibold">¿No te convencimos?</small>
+							<h2 class="text-capitalize font-weight-semibold mb-2" style="font-size: 36px; letter-spacing: -1px">Descubrí nuestras otras opciones:</h2>
+						</div>
+
+						<div class="row clearfix">
+								<div class="col-md-6 mb-5 pricing-card">
+										<a href="subscription-detail-2.html" class="card pricing border-0 shadow text-center" id="suscription-2">
+											<div class="card-body rounded pt-5 pb-0">
+												<lottie-player class="d-none d-lg-block d-xl-block" src="https://assets10.lottiefiles.com/private_files/lf30_2SKw6t.json" 
+														background="transparent" 
+														speed="1"
+														style="height: 200px;"
+														id="lottie2">
+												</lottie-player>
+												<img id="suscription-img-2" class="d-lg-none" src="demos/yoga/images/yoga-icons/color/svg/mudra_anjali.svg" class="mb-3" alt="" height="100">
+												<h3>Standard</h3>
+												<h4>El más elegido</h4>
+												<ul class="list-unstyled">
+													<li class="text-black-50 my-1"><i class="icon-line-check color"></i> 6 botellas de 375 ml.</li>
+													<li class="text-black-50 my-1"><i class="icon-line-check color"></i> Carta de degustación y maridaje</li>
+													<li class="text-black-50 my-1"><i class="icon-line-check color"></i> Descuentos en bodegas</li>
+												</ul>
+											</div>
+										</a>
+									</div>
+									<div class="col-md-6 mb-4 pricing-card">
+										<a href="subscription-detail-3.html" class="card pricing border-0 shadow text-center" id="suscription-3">
+											<div class="card-body rounded pt-5 pb-0">
+												
+												<lottie-player class="d-none d-lg-block d-xl-block" src="https://assets1.lottiefiles.com/private_files/lf30_FTCjUU.json" 
+														background="transparent" 
+														speed="1"
+														style="height: 200px;"
+														id="lottie3">
+												</lottie-player>
+												<img id="suscription-img-2" class="d-lg-none" src="demos/yoga/images/yoga-icons/color/svg/mudra_anjali.svg" class="mb-3" alt="" height="100">
+												<h3>ATV</h3>
+												<h4>A todo vino</h4>
+												<ul class="list-unstyled">
+													<li class="text-black-50 my-1"><i class="icon-line-check color"></i> 12 botellas de 375 ml.</li>
+													<li class="text-black-50 my-1"><i class="icon-line-check color"></i> Carta de degustación y maridaje</li>
+													<li class="text-black-50 my-1"><i class="icon-line-check color"></i> Descuentos en bodegas</li>
+													<li class="text-black-50 my-1"><i class="icon-line-check color"></i> Regalo sorpresa</li>
+												</ul>
+											</div>
+										</a>
+									</div>
 						</div>
 
 					</div>
-
-					<div class="clear"></div><div class="line"></div>
-
-					<div class="col_full" style="margin-bottom: 200px;">
-
-						<h4>Related Products</h4>
-
-						<div id="oc-product" class="owl-carousel product-carousel carousel-widget" data-margin="30" data-pagi="false" data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-xl="4">
-
-							<div class="oc-item">
-								<div class="product iproduct clearfix">
-									<div class="product-image">
-										<a href="#"><img src="images/shop/dress/1.jpg" alt="Checked Short Dress"></a>
-										<a href="#"><img src="images/shop/dress/1-1.jpg" alt="Checked Short Dress"></a>
-										<div class="sale-flash">50% Off*</div>
-										<div class="product-overlay">
-											<a href="#" class="add-to-cart"><i class="icon-shopping-cart"></i><span> Add to Cart</span></a>
-											<a href="include/ajax/shop-item.html" class="item-quick-view" data-lightbox="ajax"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
-										</div>
-									</div>
-									<div class="product-desc center">
-										<div class="product-title"><h3><a href="#">Checked Short Dress</a></h3></div>
-										<div class="product-price"><del>$24.99</del> <ins>$12.49</ins></div>
-										<div class="product-rating">
-											<i class="icon-star3"></i>
-											<i class="icon-star3"></i>
-											<i class="icon-star3"></i>
-											<i class="icon-star3"></i>
-											<i class="icon-star-half-full"></i>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="oc-item">
-								<div class="product iproduct clearfix">
-									<div class="product-image">
-										<a href="#"><img src="images/shop/pants/1-1.jpg" alt="Slim Fit Chinos"></a>
-										<a href="#"><img src="images/shop/pants/1.jpg" alt="Slim Fit Chinos"></a>
-										<div class="product-overlay">
-											<a href="#" class="add-to-cart"><i class="icon-shopping-cart"></i><span> Add to Cart</span></a>
-											<a href="include/ajax/shop-item.html" class="item-quick-view" data-lightbox="ajax"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
-										</div>
-									</div>
-									<div class="product-desc center">
-										<div class="product-title"><h3><a href="#">Slim Fit Chinos</a></h3></div>
-										<div class="product-price">$39.99</div>
-										<div class="product-rating">
-											<i class="icon-star3"></i>
-											<i class="icon-star3"></i>
-											<i class="icon-star3"></i>
-											<i class="icon-star-half-full"></i>
-											<i class="icon-star-empty"></i>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
 				</div>
 
 			</div>
@@ -469,6 +477,10 @@
 	============================================= -->
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.js"></script>
+
+	<!--LOTTIE PLAYER-->
+	<script src="js/lottie-player.js"></script>
+	<script src="js/lottie-custom-subscription-1.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->
