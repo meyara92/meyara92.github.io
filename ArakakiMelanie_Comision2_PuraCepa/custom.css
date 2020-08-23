@@ -120,11 +120,13 @@
     display: block;
 }
 
+/*
 .pricing-card:hover .card {
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.20);
     transform: scale(1.05);
     transition: all .2s ease-in-out;
 }
+*/
 
 .pricing-card: .card {
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.20);
@@ -132,10 +134,17 @@
     transition: all .2s ease-in-out;
 }
 
-.pricing {
-    height: 530px;
+
+.pricing h4 {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 
+.button-fullwidth {
+    width: 100%;
+}
 
 /*.pricing-card {
     transition: all .2s ease-in-out;
@@ -155,8 +164,13 @@
     background-repeat: no-repeat;
 }
 
-#price-container h3 {
+#price-container h2 {
     margin: 30px 0 10px 0;
+}
+
+.pricing-card h2 {
+    margin: 30px 0 10px 0;
+    letter-spacing: 1px;
 }
 
 .price-currency {
@@ -393,6 +407,12 @@ a {
     font-size: 1em;
 }
 
+.text-title h3 {
+    display: inline;
+    margin-bottom: 0;
+    padding: 0 20px;
+    background-color: #FFFBEA;
+
 /* Suscription-pages*/
 
 .promo-section::before {
@@ -406,3 +426,4 @@ a {
     background-repeat: no-repeat;
     background-image: url(images/hero-3.svg);
 }
+
