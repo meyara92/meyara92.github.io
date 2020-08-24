@@ -164,7 +164,7 @@ dl, dt, dd, ol, ul, li {
 
 body {
 	line-height: 1.5;
-	color: #555;
+	color: #444;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -409,7 +409,7 @@ span.middot {
 .bgcolor,
 .bgcolor #header-wrap { background-color: #eda79f !important; }
 
-.color { color: #eda79f !important; }
+.color { color: #A17B9F !important; }
 
 .border-color { border-color: #eda79f !important; }
 

@@ -45,7 +45,7 @@
 }
 
 .bg-theme-lighter {
-    background-color: #FFF5F4;
+    background-color: #FFFAFA;
 }
 
 .bg-theme-light{
@@ -164,10 +164,6 @@
     background-repeat: no-repeat;
 }
 
-#price-container h2 {
-    margin: 30px 0 10px 0;
-}
-
 .pricing-card h2 {
     margin: 30px 0 10px 0;
     letter-spacing: 1px;
@@ -199,6 +195,10 @@ h2, h3, h4 {
     font-family: 'Recoleta Medium';
     line-height: 1.2;
     color: #4C2A45;
+}
+
+.secondary-h2 {
+    font-family: 'Avenir', sans-serif;
 }
 
 .card-title {
@@ -276,7 +276,7 @@ a {
 }
 
 .slider-title p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 26px;
     font-weight: 300;
     color: #333;
@@ -309,6 +309,14 @@ a {
 
 #copyrights {
     background-color: #231422;
+}
+
+.feature-box h3 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    margin-bottom: 0;
+    color: #333;
 }
 
 @media (max-width: 991px) {
@@ -412,6 +420,16 @@ a {
     margin-bottom: 0;
     padding: 0 20px;
     background-color: #FFFBEA;
+}
+
+.form-control {
+    border-radius: 6px;
+}
+
+.feature-box.fbox-plain .fbox-icon img {
+    width: 180px !important;
+    height: auto;
+}
 
 /* Suscription-pages*/
 
