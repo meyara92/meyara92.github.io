@@ -4659,6 +4659,19 @@ body.device-touch.device-xs .portfolio-notitle .portfolio-overlay { display: non
 	overflow: hidden;
 }
 
+.masonry-thumbs .grid-item {
+    display: block;
+    position: relative;
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-top: 0;
+}
+
 .masonry-thumbs.grid-2 a { width: 50%; }
 
 .masonry-thumbs.grid-3 a { width: 33.30%; }
@@ -9165,7 +9178,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a {
 
 .tabs.tabs-alt ul.tab-nav li:first-child { border-left: 0; }
 
-.tabs.tabs-alt ul.tab-nav li a { background-color: #FFF; }
+.tabs.tabs-alt ul.tab-nav li a { background-color: transparent; }
 
 .tabs.tabs-alt ul.tab-nav li.ui-tabs-active a {
 	border: 1px solid #DDD;
