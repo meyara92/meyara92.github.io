@@ -335,6 +335,20 @@ a {
     vertical-align: middle;
 }
 
+.story-box .story-box-info {
+    height: 450px;
+}
+
+.list-left {
+    float: left;
+}
+
+.story-box.description-left .story-box-info {
+    -ms-flex-order: -1;
+    order: -1;
+    margin: 25px -20% 0 0;
+}
+
 /*
 #rev_slider_52_1_wrapper .tp-loader.spinner3 { background-color: #FFFFFF !important; }
 */
