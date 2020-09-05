@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Moranga';
-	src:url('fonts/Latinotype\ -\ Moranga\ Regular.otf');
+    font-family: 'Avenir';
+	src:url('Avenir-Roman.ttf');
 	font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Moranga Medium';
-	src:url('fonts/Latinotype\ -\ Moranga\ Medium.otf');
+    font-family: 'Avenir Light';
+	src:url('fonts/Avenir-Light.ttf');
 	font-weight: 500;
 }
 
