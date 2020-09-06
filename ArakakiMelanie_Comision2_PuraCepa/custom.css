@@ -1,8 +1,15 @@
 @font-face {
     font-family: 'Avenir';
-	src:url('Avenir-Roman.ttf');
+	src:url('fonts/Avenir-Book.ttf');
 	font-weight: normal;
 }
+
+@font-face {
+    font-family: 'Avenir Medium';
+	src:url('fonts/Avenir-Roman.ttf');
+	font-weight: 500;
+}
+
 
 @font-face {
     font-family: 'Avenir Light';
@@ -11,9 +18,9 @@
 }
 
 @font-face {
-    font-family: 'Moranga Bold';
-	src:url('fonts/Latinotype\ -\ Moranga\ Bold.otf');
-	font-weight: bold;
+    font-family: 'Avenir Bold';
+	src:url('fonts/Avenir-Bold.otf');
+	font-weight: 500;
 }
 
 @font-face {
@@ -165,7 +172,7 @@
 }
 
 .pricing-card h2 {
-    margin: 30px 0 10px 0;
+    margin: 16px 0 10px 0;
     letter-spacing: 1px;
 }
 
@@ -224,6 +231,20 @@ h2, h3, h4 {
     border-radius: 20px;
     text-transform: uppercase;
 }
+
+.before-heading-subscription {
+    display: inline-block;
+    font-size: 12px;
+    font-style: normal;
+    background-color: #FFE3E8;
+    color: #231422;
+    color: var(--themecolor);
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
 
 .heading-block h1, .heading-block h2, .heading-block h3, .heading-block h4, .emphasis-title h1, .emphasis-title h2 {
     color: #472e45;
@@ -357,20 +378,60 @@ a {
     margin: 65px 0 0 -10%;
 }
 
-/*
-#rev_slider_52_1_wrapper .tp-loader.spinner3 { background-color: #FFFFFF !important; }
-*/
+ul.tab-nav:not(.tab-nav-lg) li a {
+    border: none;
+    color: #73336E;
+    font-family: 'Recoleta';
+}
+
+.tabs.tabs-alt ul.tab-nav li.ui-tabs-active a {
+    border: none;
+    color: #73336E;
+    font-family: 'Recoleta Bold';
+}
+
+ul.tab-nav img {
+    opacity: 40%;
+}
+
+li.ui-tabs-active img {
+    opacity: 100;
+}
+
+ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 5%;
+    background: var(--themecolor);
+}
+
+.tab-nav img{
+    height: 100px;
+}
+
+#testimonials-section {
+    padding: 100px 0 180px;
+    }
+
+@media (min-width: 992px) {
+    .no-after:after {
+        content:none;
+    }
 
 .blurslider-gradient {
     background:-webkit-linear-gradient(left,#ffffff 0%,#eda79f 100%);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
-}
+    }
 
 .tp-opacity { opacity:0.85; }
 
-#header.sticky-header #header-wrap
-{
+#header.sticky-header #header-wrap {
     background-color: #FFF;
 }
 
@@ -388,8 +449,8 @@ a {
     text-transform: none;
     margin-bottom: 0;
     color: #333;
+    }
 }
-
 
 @media (max-width: 991px) {
     .demos-filter { text-align: center; }
@@ -415,11 +476,7 @@ a {
     }
     #header.header-size-custom + .include-header {
 		margin-top: calc( -70px - 2px );
-	}
-
-/*    #suscription-img-1, #suscription-img-2, #suscription-img-3 {
-        display: none;
-    }     */
+    }
 }
 
 @media (max-width: 400px) { 
@@ -480,7 +537,22 @@ a {
     #primary-menu {
         background-color: #fff;
     }
+    
+    #testimonials-section {
+        padding: 30px 0 30px;
+    }
 }
+
+.testimonials-carousel:before {
+    content: """;
+    font-family: 'Recoleta';
+    position: absolute;
+    top: -8px;
+    left: 50px;
+    font-size: 100px;
+    color: #FFEFF2;
+}
+
 
 #page-title {
     position: relative;

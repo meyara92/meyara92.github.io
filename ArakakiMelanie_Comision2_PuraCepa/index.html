@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="demos/crowdfunding/css/fonts.css" type="text/css" />
 	<link rel="stylesheet" href="demos/coworking/css/fonts.css" type="text/css" /> <!-- Theme Font -->
 	<link rel="stylesheet" href="demos/coworking/coworking.css" type="text/css" /> <!-- Theme CSS -->
+	<link rel="stylesheet" href="demos/seo/seo.css" type="text/css" /> <!-- Theme CSS -->
 	<link rel="stylesheet" href="css/onepage.css" type="text/css" />
 	<link rel="stylesheet" href="demos/yoga/yoga.css" type="text/css" /> <!-- Yoga Theme Custom CSS -->
 	<link rel="stylesheet" href="custom.css" type="text/css" /> <!-- Theme CSS -->
@@ -286,6 +287,7 @@
 												id="lottie1">
 										</lottie-player>
 										<img id="suscription-img-1" class="d-lg-none" src="images/suscription-img-1.svg" class="mb-0 mt-0" alt="" height="300">
+										<div class="before-heading-subscription">Box #1</div>
 										<h2>Un gustito</h2>
 										<h4>Un buen punto de partida</h4>
 										<ul class="list-unstyled">
@@ -307,6 +309,7 @@
 												id="lottie2">
 										</lottie-player>
 										<img id="suscription-img-2" class="d-lg-none" src="images/suscription-img-2.svg" class="mb-0 mt-0" alt="" height="300">
+										<div class="before-heading-subscription" style="background-color: #CEEAD9 !important;">Box #2</div>
 										<h2>Sexteto</h2>
 										<h4>El más elegido</h4>
 										<ul class="list-unstyled">
@@ -329,6 +332,7 @@
 												id="lottie3">
 										</lottie-player>
 										<img id="suscription-img-2" class="d-lg-none" src="images/suscription-img-3.svg" class="mb-0 mt-0" alt="" height="300">
+										<div class="before-heading-subscription" style="background-color: #E7DBE8 !important;">Box #3</div>
 										<h2>ATV</h2>
 										<h4>A todo vino</h4>
 										<ul class="list-unstyled">
@@ -383,293 +387,94 @@
 					</div>
 				</div>
 
-  				<!-- Testimonials Section
+
+				<!-- Testimonials
 				============================================= -->
-				<div id="testimonials" class="section">
+				<div id="testimonials-section" class="section mt-5 mb-0 bg-transparent" style="background: url('demos/seo/images/sections/3.jpg') no-repeat top center; background-size: cover;">
 					<div class="container">
-
-						<div class="heading-block center mt-2 mb-3 mx-auto border-bottom-0 clearfix" style="max-width: 700px">
+						<div class="heading-block nobottomborder center">
 							<div class="before-heading before-dark">El club de vinos más grande de Argentina</div>
-							<h2>Somos más de 18.000 miembrxs</h2>
+							<h2 class="nott ls0">Lo que dicen los expertos...</h2>
 						</div>
 
-						<!-- Owl Carousel
-						============================================= -->
-						<div id="oc-testimonials" class="owl-carousel center testimonials-carousel testimonial-full carousel-widget mt-5" data-margin="0" data-items-xs="1" data-items-sm="1" data-items-md="1" data-items-lg="2" data-items-xl="3" data-center="true" data-loop="true" data-autoplay="4000" data-speed="500">
+						<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget clearfix" data-margin="0" data-pagi="true" data-loop="true" data-center="true" data-autoplay="5000" data-items-sm="1" data-items-md="2" data-items-xl="3">
 
-							<!-- Item 1 -->
 							<div class="oc-item">
-								<div class="testimonial p-4 border-0 shadow-none">
+								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="demos/hosting/images/users/1.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
 									</div>
-									<ul class="list-unstyled ml-0 mt-4 mb-2"><li class="color"><i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star-half-full"></i></li></ul>
 									<div class="testi-content">
-										<p class="font-body font-normal">Lo que más me gusta de la experiencia es que todos los meses puedo calificar los vinos y la siguiente caja viene con variedades nuevas pero más acordes a lo que me gusta.</p>
+										<p>Lo que más me gusta de la experiencia es que todos los meses puedo calificar los vinos y la siguiente caja viene con variedades nuevas que me sorprenden pero a la vez se adaptan a mi</p>
 										<div class="testi-meta">
-											John Doe
-											<span>Tucumán | Miembro hace 4 años</span>
+											Agustina de Alba <a href="https://www.instagram.com/agusdealba" target="_blank">@agusdealba</a>
+											<span>Periodista y escritora. Autora de Hola Vino</span>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<!-- Item 2 -->
 							<div class="oc-item">
-								<div class="testimonial p-4 border-0 shadow-none">
+								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="demos/hosting/images/users/2.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
 									</div>
-									<ul class="list-unstyled ml-0 mt-4 mb-2"><li class="color"><i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star-empty"></i></li></ul>
 									<div class="testi-content">
-										<p class="font-body font-normal">Ya tenemos toda una tradición familiar alrededor de la caja. Todos los meses cuando llega organizamos un asado y probamos un nuevo vino en familia.</p>
+										<p>Tuve la oportunidad de recibir 2 selecciones y el nivel de los vinos es excelente. Argentina produce unos de los mejores vinos del mundo. Es esperable que mi club de vinos favoritos sea de ahí.</p>
 										<div class="testi-meta">
-											Collis Ta'eed
-											<span>Buenos Aires | Miembro hace 8 años</span>
+											Tim Atkin <a href="https://www.instagram.com/timatkinmw" target="_blank">@timatkinmw</a>
+											<span>Wine writer | Master of wine</span>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<!-- Item 3 -->
 							<div class="oc-item">
-								<div class="testimonial p-4 border-0 shadow-none">
+								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="demos/hosting/images/users/5.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="images/testimonials/4.jpg" alt="Customer Testimonails"></a>
 									</div>
-									<ul class="list-unstyled ml-0 mt-4 mb-2"><li class="color"><i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i></li></ul>
 									<div class="testi-content">
-										<p class="font-normal font-body">Antes en el super dudaba un montón y terminaba yendo por lo seguro. Gracias a este club estoy conociendo un montón de vinos y redescubriendo incluso mi propio gusto.</p>
+										<p>Ya tenemos toda una tradición familiar alrededor de la caja. Todos los meses cuando llega organizamos un asado y probamos un nuevo vino en familia.</p>
 										<div class="testi-meta">
-											Mary Jane
-											<span>Córdoba | Miembro hace 2 años</span>
+											Elisabeth Checa <a href="http://www.instagram.com/checaenlaradio" target="_blank">@checaenlaradio</a>
+											<span>Periodista de vinos | Checa en la radio, Casa Checa y Los Buenos Vinos Argentinos</span>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<!-- Item 4 -->
 							<div class="oc-item">
-								<div class="testimonial p-4 border-0 shadow-none">
+								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="demos/hosting/images/users/4.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
 									</div>
-									<ul class="list-unstyled ml-0 mt-4 mb-2"><li class="color"><i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i></li></ul>
 									<div class="testi-content">
-										<p class="font-normal font-body">Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?</p>
+										<p>Es un orgullo tener un club argentino de vinos como Pura Cepa. Sin dudas una forma excelente de probar nuevas etiquetas desde la comodidad del hogar.</p>
 										<div class="testi-meta">
-											Steve Jobs
-											<span>Apple Inc.</span>
+											Valeria Gamper <a href="https://www.instagram.com/valeriagamper" target="_blank">@valeriagamper</a>
+											<span>Mejor Sommelier de la Argentina '19 | Directiva de la Asociación Argentina de Sommeliers</span>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<!-- Item 5 -->
 							<div class="oc-item">
-								<div class="testimonial p-4 border-0 shadow-none">
+								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="demos/hosting/images/users/3.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="images/testimonials/5.jpg" alt="Customer Testimonails"></a>
 									</div>
-									<ul class="list-unstyled ml-0 mt-4 mb-2"><li class="color"><i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star-empty"></i></li></ul>
 									<div class="testi-content">
-										<p class="font-normal font-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, perspiciatis illum totam dolore deleniti labore.</p>
+										<p>Conocer y dar a conocer nuevos vinos es mi pasión. Pura Cepa es una demostración de calidad, dedicación y coherencia en todos los niveles de la industria.</p>
 										<div class="testi-meta">
-											Jamie Morrison
-											<span>Adobe Inc.</span>
+											Paz Levinson <a href="https://www.instagram.com/pazlevinson/" target="_blank">@pazlevinson</a>
+										<span>Mejor Sommelier de las Américas 2015 APAS ASI | Court of Master sommeliers - Advanced Certificate</span>
 										</div>
 									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-<!-- Una propuesta alternativa para lo de opiniones
-				<div class="section p-0 testimonials clearfix">
-					<div class="container" style="padding: 120px 0">
-						<div class="heading-block nobottomborder center">
-							<div class="before-heading">PALABRAS DE LOS MIEMBROS</div>
-							<h2 class="nott t600">Opiniones</h2>
-							<p class="mb-0 mt-1"><span class="t600">Excelente, 9.6</span> de 10 basado en <span class="t600">2,118</span> opiniones en TrustAdvisor. </p>
-						</div>
-
-						<div id="testimonials-carousel" class="owl-carousel carousel-widget testimonial testimonial-full nobgcolor noborder noshadow nopadding divcenter tleft clearfix" data-animate-in="fadeIn" data-animate-out="fadeOut" data-margin="24" data-nav="false" data-pagi="true" data-items="1" style="max-width: 740px">
-							<div class="slide">
-								<div class="testi-content">
-									<div class="testi-stars mb-4">
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-									</div>
-									<p>Lo que más me gusta de la experiencia es que todos los meses puedo calificar los vinos y la siguiente caja viene con variedades nuevas pero más acordes a lo que me gusta.</p>
-									<div class="testi-meta mt-4">
-										Steve Jobs
-										<span class="ls0">Tucumán | Miembro hace 4 años</span>
-									</div>
-								</div>
-							</div>
-							<div class="slide">
-								<div class="testi-content">
-									<div class="testi-stars mb-4">
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star-half2"></i>
-									</div>
-									<p>Ya tenemos toda una tradición familiar alrededor de la caja. Todos los meses cuando llega organizamos un asado y probamos un nuevo vino en familia.</p>
-									<div class="testi-meta mt-4">
-										Collis Ta'eed
-										<span class="ls0">Buenos Aires | Miembro hace 8 años</span>
-									</div>
-								</div>
-							</div>
-							<div class="slide">
-								<div class="testi-content">
-									<div class="testi-stars mb-4">
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-									</div>
-									<p>Antes en el super dudaba un montón y terminaba yendo por lo seguro. Gracias a este club estoy conociendo un montón de vinos y redescubriendo incluso mi propio gusto.</p>
-									<div class="testi-meta mt-4">
-										John Doe
-										<span class="ls0">Córdoba | Miembro hace 2 años</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>-->
-
-				<!--<div class="section nobg clearfix" style="padding: 80px 0">
-					<div class="container">
-						<div class="row justify-content-between align-items-center">
-							<div class="col-lg-8 col-md-10 offset-lg-2 offset-md-1 bottommargin-lg">
-								<a href="https://www.youtube.com/watch?v=P3Huse9K6Xs" data-lightbox="iframe" class="play-video position-relative"><img src="demos/coworking/images/video-bg.jpg" alt="Video Image" class="rounded-lg shadow-lg">
-									<i class="icon-play"></i>
-								</a>
-							</div>
-							<div class="col-lg-5 col-md-6 mt-0 mt-md-4">
-								<div class="feature-box fbox-plain fbox-small">
-									<div class="fbox-icon">
-										<i class="icon-line2-magic-wand"></i>
-									</div>
-									<h3>Selecciones hechas a tu medida</h3>
-									<p>Nos contás sobre tus gustos y todos los meses armamos una caja para vos.</p>
-								</div>
-
-								<div class="feature-box fbox-plain fbox-small">
-									<div class="fbox-icon">
-										<i class="icon-line2-clock"></i>
-									</div>
-									<h3>Envío gratis a todo el país</h3>
-									<p>Te envíamos la caja directo a tu casa, en el día y horario que elijas.</p>
-								</div>
-
-								<div class="feature-box fbox-plain fbox-small mb-0">
-									<div class="fbox-icon">
-										<i class="icon-line2-speech"></i>
-									</div>
-									<h3>Satisfacción garantizada</h3>
-									<p>Te ofrecemos calificar los vinos y así aprender más sobre tus preferencias.</p>
-								</div>
-							</div>
-
-							<div class="col-lg-5 col-md-6 mt-5 mt-md-0">
-								<h2 class="ls0">Get One Day Free Trial.</h2>
-								<p class="text-muted mb-5" style="font-size: 18px;">Enthusiastically embrace diverse e-markets after sustainable applications. Collaboratively impact intermandated systems vis-a-vis progressive information.</p>
-								<div class="d-flex">
-									<a href="#" class="button button-rounded button-xlarge d-block flex-fill m-0 center nott t600 ls0">Sign Up</a>
-									<a href="#" class="button button-rounded button-xlarge d-block flex-fill button-border m-0 ml-3 center nott t600 ls0">Contact Us</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="line"></div>
-
-				<div class="section nobg clearfix">
-					<div class="container">
-						<div class="heading-block nobottomborder center">
-							<div class="before-heading">See What's Up in Latest</div>
-							<h2 class="nott t600">News &amp; Events</h2>
-						</div>
-
-						<div class="clear"></div>
-
-						<div class="row mb-5">
-							<div class="col-md-4 mt-5">
-								<article class="ipost">
-									<div class="entry-title">
-										<h3><a href="#">A Meetup for People Currently Running an e-Commerce Business</a></h3>
-									</div>
-									<div class="entry-content clearfix">
-										<p>Synergistically expedite focused experiences through orthogonal "outside the box" thinking. Collaboratively reconceptualize e-commerce via effective applications. Enthusiastically conceptualize go forward functionalities vis-a-vis sticky partnerships. Distinctively underwhelm premier scenarios without synergistic best practices. Globally target cross-platform.</p>
-									</div>
-									<div class="author-meta d-flex align-items-center">
-										<div class="author-image">
-											<img src="demos/articles/images/authors/1.jpg" alt="Author Image" class="rounded-circle">
-										</div>
-										<ul class="entry-meta m-0 clearfix">
-											<li><span>By</span> <a href="#">Hanson Deck</a></li>
-											<li class="mb-0"><a href="#">Mar 11, 2016</a></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-
-							<div class="col-md-4 mt-5">
-								<article class="ipost">
-									<div class="entry-title">
-										<h3><a href="#">Creating Your Own Demand as a Digital Nomad</a></h3>
-									</div>
-									<div class="entry-content clearfix">
-										<p>Pellentesque hic illo beatae rhoncus sint, quis, fugiat imperdiet unde architecto magna dui hymenaeos autem lorem eligendi.</p>
-									</div>
-									<div class="author-meta d-flex align-items-center">
-										<div class="author-image">
-											<img src="demos/articles/images/authors/2.jpg" alt="Author Image" class="rounded-circle">
-										</div>
-										<ul class="entry-meta m-0 clearfix">
-											<li><span>By</span> <a href="#">Hanson Deck</a></li>
-											<li class="mb-0"><a href="#">Mar 11, 2016</a></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-
-							<div class="col-md-4 mt-5">
-								<article class="ipost">
-									<div class="entry-title">
-										<h3><a href="#">Succeeding Remotely Within A Stateside Team</a></h3>
-									</div>
-									<div class="entry-content clearfix">
-										<p>Pellentesque hic illo beatae rhoncus sint, quis, fugiat imperdiet unde architecto magna dui hymenaeos autem lorem eligendi.</p>
-									</div>
-									<div class="author-meta d-flex align-items-center">
-										<div class="author-image">
-											<img src="demos/articles/images/authors/3.jpg" alt="Author Image" class="rounded-circle">
-										</div>
-										<ul class="entry-meta m-0 clearfix">
-											<li><span>By</span> <a href="#">Hanson Deck</a></li>
-											<li class="mb-0"><a href="#">Mar 11, 2016</a></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-
-						</div>
-					</div>
-
-				</div>-->
-				<div id="members-gallery" class="section bg-theme-accent clearfix">
+				<div id="members-gallery" class="section bg-theme-accent clearfix mt-0">
 					<div class="container">
 						<div class="heading-block nobottomborder center">
 							<div class="before-heading">#EXPERIENCIAPURACEPA</div>
