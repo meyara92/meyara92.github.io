@@ -336,7 +336,7 @@ a {
 }
 
 .story-box .story-box-info {
-    height: 450px;
+    height: 360px;
 }
 
 .list-left {
@@ -346,7 +346,15 @@ a {
 .story-box.description-left .story-box-info {
     -ms-flex-order: -1;
     order: -1;
-    margin: 25px -20% 0 0;
+    margin: 65px -10% 0 0;
+}
+
+.story-box .story-box-image {
+    width: 60%;
+}
+
+.story-box .story-box-info {
+    margin: 65px 0 0 -10%;
 }
 
 /*
