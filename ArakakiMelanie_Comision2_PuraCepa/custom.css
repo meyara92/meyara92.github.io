@@ -133,6 +133,10 @@ h5, h6 {
     color: #472e45;
 }
 
+#content p {
+    line-height: 1.5;
+}
+
 .pricing-button{ 
     display:none;
 }
@@ -338,11 +342,11 @@ a {
 
 
 .slider-features ul.dark li:not(:last-child) {
-    border-right-color: rgba(0, 0, 0, 1);
+    border-right-color: rgba(0, 0, 0, 0.3);
 }
 
 .slider-features ul li:not(:last-child) {
-    border-right: 1px solid rgba(0, 0, 0, 1);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
     margin-right: 20px;
     padding-right: 20px;
 }
@@ -589,7 +593,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     }
 
     #contact {
-        margin-bottom: 0px !important;
+        padding-bottom: 120px !important;
     }
 
     #footer-img {
@@ -647,7 +651,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
 
 
     .slider-features ul li:not(:last-child) {
-        border-right: 1px solid rgba(0, 0, 0, 1);
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
         margin-right: 4px;
         padding-right: 4px;
     }
@@ -679,9 +683,9 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     .top-title {
         display: block;
         position: relative;
-        font-size: 36px !important;
+        font-size: 32px !important;
         font-family: 'Recoleta Medium';
-        line-height: 30px !important;
+        line-height: 28px !important;
         text-align: center;
     }
 
@@ -695,6 +699,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     
     .before-heading-hero {
         margin-bottom: 10px !important;
+        font-size: 12px;
     }
 
     #detail-title {
@@ -796,7 +801,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     }*/
 
     #cross-selling {
-        margin-bottom: 40px !important;
+        padding-bottom: 24px !important;
     }
 }
 
