@@ -71,6 +71,10 @@
     border-radius: 100px !important;
 }
 
+h5, h6 {
+    margin-bottom: 10px;
+}
+
 .header-row {
     position: relative;
     display: -ms-flexbox;
@@ -153,10 +157,9 @@
 
 
 .pricing h4 {
-    font-family: 'Avenir', sans-serif;
-    font-weight: 200;
     text-transform: uppercase;
     font-size: 1em;
+    font-weight: 400;
 }
 
 .button-fullwidth {
@@ -214,9 +217,15 @@ h2, h3, h4 {
     color: #4C2A45;
 }
 
-.secondary-h2 {
-    font-family: 'Avenir', sans-serif;
+.feature-box.fbox-center.fbox-small p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
 }
+
+/*.secondary-h2 {
+    font-family: 'Avenir', sans-serif;
+}*/
 
 .card-title {
     color: #4C2A45;
@@ -227,7 +236,7 @@ h2, h3, h4 {
 }
 
 #primary-menu ul li:hover > a, #primary-menu ul li.current > a {
-    color: #eda79f;
+    color: #4C2A45;
 }
 
 .before-heading {
@@ -255,6 +264,17 @@ h2, h3, h4 {
     font-weight: 600;
 }
 
+.before-heading-hero {
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    background-color: #FFE3E8;
+    color: #231422;
+    text-transform: uppercase;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
 
 .heading-block h1, .heading-block h2, .heading-block h3, .heading-block h4, .emphasis-title h1, .emphasis-title h2 {
     color: #472e45;
@@ -323,8 +343,8 @@ a {
 
 .slider-features ul li:not(:last-child) {
     border-right: 1px solid rgba(0, 0, 0, 1);
-    margin-right: 40px;
-    padding-right: 40px;
+    margin-right: 20px;
+    padding-right: 20px;
 }
 
 .slider-features h4 {
@@ -336,12 +356,15 @@ a {
     display: block;
     width: 58px !important;
     height: 54px !important;
-    margin-bottom: 1rem;
+    margin-bottom: 10pxrem;
+}
+
+.slider-features p {
+    max-width: 200px;
 }
 
 .slider-img {
     right: 0px;
-    top: 45%;
     width: 45%;
 }
 
@@ -429,9 +452,58 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     padding: 60px 0 180px;
     }
 
+
+.no-after:after {
+    content:none;
+}
+
+
+.breadcrumb {
+    position: absolute !important;
+    width: auto !important;
+    top: 50% !important;
+    left: auto !important;
+    margin: -10px 0 0 0 !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    font-size: 16px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.owl-carousel .owl-nav [class*=owl-]:hover {
+    background-color: #73336E !important;
+}
+
 @media (min-width: 992px) {
-    .no-after:after {
-        content:none;
+    .menu-container > li > a div::after {
+        opacity: 0;
+        content: '';
+        background: url(images/border.svg) no-repeat;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 4px;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+    .menu-container > li > a div {
+        position: relative;
+    }
+
+    .menu-container > li.active > a > div::after, .menu-container > li:hover > a > div::after {
+        bottom: -1px;
+        opacity: 1;
+    }
+
+    .link-active::after {
+        bottom: -1px!important;
+        opacity: 1!important;
     }
 
     .blurslider-gradient {
@@ -499,7 +571,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     }
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 600px) { 
     #slide-126-layer-2 {
         font-size: 32pt !important;
     }
@@ -508,12 +580,16 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
         width: 300px;
     }
 
+    #benefits {
+        margin-left: 0px !important;
+    }
+
     #price-container {
         background-image: none;
     }
 
     #contact {
-        margin-bottom: 120px !important;
+        margin-bottom: 0px !important;
     }
 
     #footer-img {
@@ -522,6 +598,15 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
 
     .slider-img {
         margin-top: 170px !important;
+        padding-top: 10px;
+    }
+
+    #header.transparent-header + #slider {
+        top: -100px;
+    }
+
+    #header-detail.transparent-header + #slider {
+        top: -100px;
     }
 
     .hero-features {
@@ -538,6 +623,35 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
         float: none !important;
     }
 
+    #detail-content-wrap{
+        padding: 230px 0;
+    }
+
+    .slider-features img {
+        display: inline-block;
+        width: 36px !important;
+        height: 33px !important;
+        margin-bottom: 5px;
+    }
+
+    .slider-features {
+        text-align: center !important;
+        margin-top: 10px !important;
+    }
+
+    .slider-features p {
+        font-size: 10pt;
+        max-width: 80px;
+        text-align: center;
+    }
+
+
+    .slider-features ul li:not(:last-child) {
+        border-right: 1px solid rgba(0, 0, 0, 1);
+        margin-right: 4px;
+        padding-right: 4px;
+    }
+
     #header.transparent-header, #header.semi-transparent {
     background: #FFF;
     border-bottom: 1px solid #231422;
@@ -549,7 +663,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     }
 
     h1{
-        margin-top: 400px;
+        margin-top: 80px;
         font-size: 40px;
         line-height: 48px;
     }
@@ -565,7 +679,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     .top-title {
         display: block;
         position: relative;
-        font-size: 30px !important;
+        font-size: 36px !important;
         font-family: 'Recoleta Medium';
         line-height: 30px !important;
         text-align: center;
@@ -573,6 +687,22 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
 
     .slider-title {
         text-align: center;
+    }
+
+    #detail-hero {
+        margin-top: 180px;
+    }
+    
+    .before-heading-hero {
+        margin-bottom: 10px !important;
+    }
+
+    #detail-title {
+        margin-top: 0px;
+    }
+
+    .slider-element {
+        overflow: visible;
     }
 
     .opm-large-word {
@@ -586,16 +716,26 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
         text-align: center;
     }
 
+    .slider-title h2 {
+        font-size: 18px;
+    }
+
+    .subscription-price {
+        font-size: 36px !important;
+        font-family: 'Avenir', sans-serif;
+    }
+
     .slider-img {
         right: 0px;
         top: 41%;
+        height: auto;
         width: 100%;
     }
 
     .button {
         width: 100%;
         text-align: center;
-        margin: 5px 0 5px 0;
+        margin: 0px 0 24px 0 !important;
     }
 
     #logo {
@@ -623,6 +763,41 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
         height: 72px;
     }
 
+    #detail-img {
+        margin-top: 0px !important;
+        width: 100%;
+        padding-top: 24px;
+    }
+
+    .mt-10 {
+        margin-top:300px;
+    }
+
+    #page-title {
+        position: relative;
+        padding: 8px 0 !important;
+        background-color: #FFF;
+        font-size: 1em;
+        align-items: left;
+    }
+
+    #page-title .breadcrumb {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: 0px 0 0 !important;
+        justify-content: center;
+    }
+
+    /*.secondary-h2 {
+        font-size: 16px;
+        font-family: 'Avenir Medium';
+    }*/
+
+    #cross-selling {
+        margin-bottom: 40px !important;
+    }
 }
 
 
@@ -642,6 +817,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     position: relative;
     padding: 24px 0;
     background-color: #FFF;
+    border-top: 1px solid #EEE;
     border-bottom: 1px solid #EEE;
     font-size: 1em;
 }

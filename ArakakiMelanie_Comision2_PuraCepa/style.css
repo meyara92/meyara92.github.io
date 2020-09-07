@@ -6765,7 +6765,7 @@ body:not(.device-touch) .button {
 }
 
 .button:hover {
-	background-color: #444;
+	background-color: #55224B;
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -8674,7 +8674,6 @@ body:not(.device-touch) .on-hover.i-overlay {
 	height: 40px;
 	font-size: 20px;
 	line-height: 38px !important;
-	color: #555;
 	text-shadow: none;
 	border: 1px solid #AAA;
 	border-radius: 3px;
@@ -12248,7 +12247,7 @@ button.toast-close-button {
 
 #copyrights {
 	padding: 40px 0;
-	background-color: #DDD;
+	background-color: #231422;
 	font-size: 14px;
 	line-height: 1.8;
 }

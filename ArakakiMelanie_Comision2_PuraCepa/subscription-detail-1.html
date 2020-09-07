@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
@@ -50,7 +51,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="sticky">
+		<header id="header-detail" class="sticky transparent-header header-size-custom">
 
 				<div id="header-wrap">
 	
@@ -68,7 +69,7 @@
 						<!-- Primary Navigation
 						============================================= -->
 						<nav id="primary-menu">
-							<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+							<ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 								<li><a href="index.html#wrapper"><div>Inicio</div></a></li>
 								<li><a href="index.html#how-it-works"><div>Cómo funciona</div></a></li>
 								<li><a href="index.html#price-container"><div>Suscripción</div></a></li>
@@ -85,10 +86,10 @@
 
 		<!-- Page Title
 		=============================================-->
-		<section id="page-title" style="background-color: transparent;">
+		<section id="page-title" style="background-color: #FFF;">
 			<div class="container clearfix">
 				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html#price-container" style="color: #472e45;">Volver atrás</a></li>
+					<li class="breadcrumb-item"><a href="index.html#price-container" style="color:#472e45; font-weight: 400;"><i class="icon-line-arrow-left"></i> Volver al Inicio</a></li>
 				</ol>
 			</div>
 
@@ -96,43 +97,43 @@
 
 		<section id="slider" class="slider-element min-vh-100 include-header" style="background: url('images/hero-bg-lilac.svg') no-repeat center bottom / cover;">
 			<div class="slider-inner">
-
 				<div class="vertical-middle">
-					<div class="container py-5">
+					<div class="container py-3 mt-10">
 						<div class="row">
 							<div id="slider-container" class="col-lg-6 col-md-6">
-								<div class="slider-title">
-									<h1 class="mb-2">Un gustito</h1>
-									<h2 class="secondary-h2 uppercase">Un buen punto de partida</h2>
-									<p>Una caja que trae lo mínimo que necesitás para incusionarte en este bello mundo del vino. Disfrutala solx, en pareja o con amigxs.</p>
-									<h2 class="subscription-price mt-4 mb-2">$900<span class="monthly-label"> por mes</span></h2>
+								<div id="detail-hero" class="slider-title">
+									<div class="before-heading-hero mb-4">Box #1</div>
+									<h1 id="detail-title" class="top-title mb-3">Un gustito</h1>
+									<h2 class="font-weight-semibold uppercase mb-2">Un buen punto de partida</h2>
+									<p class="mb-0">Una caja que trae lo mínimo que necesitás para incusionarte en este bello mundo del vino. Disfrutala solx, en pareja o con amigxs.</p>
+									<h2 class="subscription-price mt-4 mb-4">$900<span class="monthly-label"> por mes</span></h2>
 								</div>
 								<a href="#" data-href="#price-container" class="button button-large font-weight-semibold button-rounded ls0 nott ml-0 mb-4">Suscribirme</a>
 								<a href="#" data-href="#how-it-works" class="button button-large font-weight-semibold button-border button-rounded ls0 nott">Regalar</a><br>
 								<div class="tp-caption slider-features tp-resizeme mt-5">
-										<ul class="list-unstyled">
-												<li class="d-inline-block">
-													<img src="images/shipping.png" alt="Envío" width="40">
-													<h4>Envío gratis</h4>
-												</li>
-		
-												<li class="d-inline-block">
-													<img src="images/card.png" alt="Tarjeta" width="40">
-													<h4>Pagá con tarjeta</h4>
-												</li>
-		
-												<li class="d-inline-block">
-													<img src="images/flexible.png" alt="Flexible" width="40">
-													<h4>Suscripción flexible</h4>
-												</li>
-											</ul>
-									</div>
+									<ul class="list-unstyled">
+										<li class="d-inline-block">
+											<img src="images/shipping.png" alt="Envío" width="40">
+											<p>Envío 100% gratis</p>
+										</li>
+
+										<li class="d-inline-block">
+											<img src="images/card.png" alt="Tarjeta" width="40">
+											<p>Pagá con tarjeta</p>
+										</li>
+
+										<li class="d-inline-block">
+											<img src="images/flexible.png" alt="Flexible" width="40">
+											<p>Suscripción flexible</p>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<img src="images/ug-detail.png" alt="" class="slider-img parallax" data-start="margin-top: 0px;" data-400="margin-top: 50px;">
-
+				<img id="detail-img" src="images/ug-detail-mobile.png" alt="" class="d-lg-none slider-img parallax" data-start="margin-top: 0px;" data-400="margin-top: 50px;">
+				<img src="images/ug-detail.png" alt="" class="d-none d-lg-block d-xl-block slider-img parallax" data-start="margin-top: 0px;" data-400="margin-top: 50px;">
 			</div>
 		</section><!-- #Slider End -->
 		
@@ -141,14 +142,14 @@
 		
 		<section id="content">
 
-			<div class="content-wrap">
+			<div id="detail-content-wrap" class="content-wrap pb-0">
 
 				<div class="container clearfix">
 
 					<div class="row justify-content-center mb-5">
 						<div class="col-lg-7 center">
 							<div class="heading-block">
-								<h3 class="nott mb-3 font-weight-semibold ls0">¿Qué viene adentro de la caja?</h3>
+								<h2 class="nott mb-3 font-weight-semibold ls0">¿Qué viene adentro de la caja?</h2>
 								<span class="text-black-50">Un pequeño vistazo a la experiencia que te proponemos.</span>
 							</div>
 						</div>
@@ -164,11 +165,14 @@
 								</div>
 							</div>
 							<div class="row align-items-center mt-5">
+								<div class="col-sm-6 d-lg-none">
+									<img src="images/subscriptions/subscription-1-b.jpg" alt="Image 1">
+								</div>
 								<div class="col-sm-6 mb-4 mb-sm-0">
 									<h3>Carta de maridaje y degustación</h3>
 									<p class="mb-2">Para que puedas disfrutar la experiencia Pura Cepa al máximo, incluímos una carta con sugerencias para acompañar los vinos y resaltar aún más su sabor. Vas a encontrar también recomendaciones y descuentos de lugares a donde comprar la comida.</p>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-6 d-none d-lg-block d-xl-block">
 									<img src="images/subscriptions/subscription-1-b.jpg" alt="Image 1">
 								</div>
 							</div>
@@ -186,11 +190,11 @@
 
 				</div>
 				<div class="section bg-theme-lighter">
-					<div class="container bg-theme-lighter topmargin-lg clearfix">
+					<div class="container bg-theme-lighter clearfix">
 
 						<div class="mx-auto" style="max-width: 960px">
 							<div class="heading-block center border-bottom-0 no-after">
-								<h3 class="nott mb-3 font-weight-semibold ls0">¿Qué vinos me pueden tocar?</h3>
+								<h2 class="nott mt-5 mb-3 font-weight-semibold ls0">¿Qué vinos me pueden tocar?</h2>
 								<p>¡Depende de los resultados de tu test de sabor!<br>Pero te aseguramos una selección única con etiquetas premiadas y reconocidas a nivel nacional y mundial.</p>
 							</div>
 
@@ -201,7 +205,7 @@
 											<img src="images/wines-red-mobile.png" class="mb-3" alt="" height="200">
 											<h2>Tintos</h2>
 											<p class="mb-4">Hechos con uvas rojas o azuladas. El tanino proviene de la piel de estas uvas. Sabor a especias, maderas o minerales. Nuestros destacados:</p>
-											<ul class="iconlist list-left mb-3" style="margin-right: 24px;">
+											<ul class="list-unstyled mb-3">
 												<li><i class="icon-line-circle-check color"></i> <strong>El Cepillo Malbec</strong> | Riccitelli Wines 🇦🇷</li>
 												<li><i class="icon-line-circle-check color"></i> <strong>Siren's Call</strong> | BC Wines Studio 🇨🇦</li>
 												<li><i class="icon-line-circle-check color"></i> <strong>Uspallata Malbec</strong> | Estancia Uspallata 🇦🇷</li>
@@ -215,7 +219,7 @@
 											<img src="images/wines-white-mobile.png" class="mb-3" alt="" height="200">
 											<h2>Blancos</h2>
 											<p class="mb-4">Hechos con uvas verdes o blancas y sin piel. Vinos aromáticos, florales u afrutados, y muy ligeros. Nuestros destacados:</p>
-											<ul class="iconlist list-left mb-3" style="margin-right: 24px;">
+											<ul class="list-unstyled mb-3">
 												<li><i class="icon-line-circle-check color"></i> <strong>White Blend</strong> | La Posta 🇦🇷</li>
 											<li><i class="icon-line-circle-check color"></i> <strong>Sauvignon Blanc</strong> | Barefoot Wines 🇺🇸</li>
 											<li><i class="icon-line-circle-check color"></i> <strong>Nolita Sweet</strong> | Finca Las Moras 🇦🇷</li>
@@ -229,7 +233,7 @@
 											<img src="images/wines-rose-mobile.png" class="mb-3" alt="" height="200">
 											<h2>Rosados</h2>
 											<p class="mb-4">Hechos con uvas de color pero sin taninos. Tienen un aroma más ligero, afrutado y floral. Nuestros destacados:</p>
-											<ul class="iconlist list-left mb-3" style="margin-right: 24px;">
+											<ul class="list-unstyled mb-3">
 												<li><i class="icon-line-circle-check color"></i> <strong>Hey Rosé</strong> | Riccitelli Wines 🇦🇷</li>
 												<li><i class="icon-line-circle-check color"></i> <strong>Hampton Water</strong> | Hampton Water 🇫🇷</li>
 												<li><i class="icon-line-circle-check color"></i> <strong>White Zinfandel</strong> | Barefoot Wines 🇺🇸</li>
@@ -244,7 +248,7 @@
 								<ul class="tab-nav clearfix">
 									<li><a href="#tabs-1"><img src="images/red-grapes.png" alt="Tintos"></i>Tintos</a></li>
 									<li><a href="#tabs-2"><img src="images/green-grapes.png" alt="Blancos"></i>Blancos</a></li>
-									<li><a href="#tabs-3"><img src="images/rose-grapes.png" alt="Rose"></i>Rosé</a></li>
+									<li><a href="#tabs-3"><img src="images/rose-grapes.png" alt="Rose"></i>Rosados</a></li>
 								</ul>
 	
 								<div class="tab-container">
@@ -333,7 +337,7 @@
 
 				<!-- Promo/Contact
 				============================================= -->
-				<div class="section mt-5 promo-section nobg mt-5" style="padding: 200px 0; overflow: visible">
+				<div class="section mt-5 promo-section nobg mt-5" style="padding: 100px 0; overflow: visible">
 					<div class="container">
 						<div class="heading-block nobottomborder center">
 							<div class="before-heading before-dark">¿Ya estás adentro?</div>
@@ -344,27 +348,27 @@
 				</div>
 				
 				<div class="section bg-theme-light clearfix">
-					<div class="container clearfix" style="margin-bottom: 240px;">
+					<div id="cross-selling" class="container clearfix" style="margin-bottom: 240px;">
 
-						<div class="heading-block mx-auto border-bottom-0 center clearfix" style="max-width: 600px">
+						<div class="heading-block mx-auto border-bottom-0 center clearfix">
 							<div class="before-heading">¿No te convencimos?</div>
-							<h2 class="text-capitalize font-weight-semibold mb-2" style="font-size: 36px; letter-spacing: -1px">Descubrí nuestras otras opciones:</h2>
+							<h2 class="font-weight-semibold mb-2">Descubrí nuestras otras opciones:</h2>
 						</div>
 
 						<div class="row clearfix">
 								<div class="col-md-6 mb-5 pricing-card">
 										<div class="card pricing border-0 shadow text-center" id="suscription-2">
 											<div class="card-body rounded pt-5 pb-0">
-												<lottie-player class="d-none d-lg-block d-xl-block" src="https://assets7.lottiefiles.com/private_files/lf30_Hm1b1n.json" 
+												<lottie-player class="d-none d-lg-block d-xl-block" src="https://assets8.lottiefiles.com/private_files/lf30_HE2uHq.json" 
 														background="transparent" 
 														speed="1"
 														style="height: 240px;"
 														id="lottie2">
 												</lottie-player>
-												<img id="suscription-img-2" class="d-lg-none" src="images/suscription-img-2.svg" class="mb-0 mt-0" alt="" height="300">
+												<img id="suscription-img-2" class="d-lg-none" src="images/suscription-img-2.svg" class="mb-0 mt-0" alt="" height="180">
 												<div class="before-heading-subscription" style="background-color: #CEEAD9 !important;">Box #2</div>
-												<h2>Sexteto</h2>
-												<h4>El más elegido</h4>
+												<h2>Sommelier</h2>
+												<h4>Un camino de ida</h4>
 												<a href="subscription-detail-1.html" class="button button-border button-rounded font-weight-semibold mb-5">Conocé más</a>
 											</div>
 										</div>
@@ -379,7 +383,7 @@
 														style="height: 240px;"
 														id="lottie3">
 												</lottie-player>
-												<img id="suscription-img-3" class="d-lg-none" src="images/suscription-img-3.svg" class="mb-0 mt-0" alt="" height="300">
+												<img id="suscription-img-3" class="d-lg-none" src="images/suscription-img-3.svg" class="mb-0 mt-0" alt="" height="180">
 												<div class="before-heading-subscription" style="background-color: #E7DBE8 !important;">Box #3</div>
 												<h2>ATV</h2>
 												<h4>A todo vino</h4>
@@ -463,8 +467,21 @@
 					<div class="col_one_third col_last">
 
 						<div class="widget clearfix">
-							<h4 style="color: #fffbeb;">@PuraCepaClub</h4>
-							<div id="instagram-photos" class="instagram-photos masonry-thumbs grid-5" data-user="brightcellars" data-count="10" data-type="tag"></div>
+							<a href="http://www.instagram.com/brightcellars" style="color: #fffbeb; font-family: 'Recoleta Bold';" target="_blank">@PURACEPACLUB</a>
+							<div id="instagram-photos" class="instagram-photos masonry-thumbs grid-5 mt-2" data-user="brightcellars" data-count="10" data-type="tag">
+								<img src="images/gallery/1.jpg" class="grid-item">
+								<img src="images/gallery/2.jpg" class="grid-item">
+								<img src="images/gallery/3.jpg" class="grid-item">
+								<img src="images/gallery/4.jpg" class="grid-item">
+								<img src="images/gallery/5.jpg" class="grid-item">
+								<img src="images/gallery/6.jpg" class="grid-item">
+								<img src="images/gallery/7.jpg" class="grid-item">
+								<img src="images/gallery/8.jpg" class="grid-item">
+								<img src="images/gallery/9.jpg" class="grid-item">
+								<img src="images/gallery/10.jpg" class="grid-item">
+								<img src="images/gallery/11.jpg" class="grid-item">
+								<img src="images/gallery/13.jpg" class="grid-item">
+							</div>
 						</div>
 					</div>
 

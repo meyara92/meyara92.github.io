@@ -15,12 +15,13 @@ window.SEMICOLON_instagramPhotosInit = function( $instagramPhotosEl ){
 			elLimit = 12;
 		}
 
-		SEMICOLON_getInstagramPhotos( element, elUsername, elLimit, '', false );
+		SEMICOLON_getInstagramPhotos( element, elUsername, elLimit );
 	});
 
 };
 
-window.SEMICOLON_getInstagramPhotos = function( element, username, limit, nextkey, images ) {
+
+window.SEMICOLON_getInstagramPhotos = function( element, username, limit, nextkey = '', images = false ) {
 
 	let newimages = '';
 
