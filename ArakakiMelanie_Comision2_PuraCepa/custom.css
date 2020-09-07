@@ -110,7 +110,6 @@ h5, h6 {
 
 #members-gallery h2 {
     color: #FFF;
-    letter-spacing: 1px;
 }
 
 #members-gallery p {
@@ -190,7 +189,6 @@ h5, h6 {
 
 .pricing-card h2 {
     margin: 16px 0 10px 0;
-    letter-spacing: 1px;
 }
 
 .price-currency {
@@ -216,7 +214,7 @@ h1 {
 }
 
 h2, h3, h4 {
-    font-family: 'Recoleta Medium';
+    font-family: 'Recoleta Semibold';
     line-height: 1.2;
     color: #4C2A45;
 }
@@ -804,19 +802,6 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
         padding-bottom: 24px !important;
     }
 }
-
-
-
-.testimonials-carousel:before {
-    content: """;
-    font-family: 'Recoleta';
-    position: absolute;
-    top: -8px;
-    left: 50px;
-    font-size: 100px;
-    color: #FFEFF2;
-}
-
 
 #page-title {
     position: relative;

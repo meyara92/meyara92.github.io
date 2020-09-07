@@ -112,17 +112,6 @@
 
 .section:not(.nobg) .fancy-title h4 { background-color: #F9F9F9; }
 
-.testimonials-carousel:before {
-	content: "\e7ad";
-	font-family: 'font-icons';
-	position: absolute;
-	top: -8px;
-	left: 50px;
-	font-size: 100px;
-	color: rgba(51,94,238, 0.02);
-	color: rgba(var(--themecolorrgba), 0.08);
-}
-
 .header-misc .button {
 	background-color: var(--secondcolor);
 	margin: 0;
