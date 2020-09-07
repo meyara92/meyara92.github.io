@@ -110,6 +110,131 @@ var SEMICOLON = SEMICOLON || {};
 
 		},
 
+		execFunc: function( functionName, context ) {
+			let args = Array.prototype.slice.call( arguments, 2 ),
+				namespaces = functionName.split("."),
+				func = namespaces.pop();
+
+			for( let i = 0; i < namespaces.length; i++ ) {
+				context = context[namespaces[i]];
+			}
+
+			if( typeof context[func] !== 'undefined' ) {
+				return context[func].apply( context, args );
+			} else {
+				console.log( functionName + ' Function does not exist' );
+			}
+		},
+
+		execPlugin: function( element, settings ) {
+			window.scwEvents	= window.scwEvents || {};
+			let pluginActive	= false,
+				pluginLinkingInterval;
+
+			if( settings.trigger && !scwEvents[settings.trigger] ) {
+				pluginLinkingInterval = setInterval( function plugFn(){
+					let pluginFnExec = Function( 'return ' + settings.pluginfn )();
+					if( pluginFnExec ) {
+						$(window).trigger( settings.trigger );
+						scwEvents[settings.trigger] = true;
+						clearInterval( pluginLinkingInterval );
+					}
+					return plugFn;
+				}(), 1000);
+			} else {
+				pluginActive = true;
+			}
+
+			if( settings.execfn ) {
+				if( settings.trigger && !pluginActive ) {
+					$(window).on( settings.trigger, function(){
+						SEMICOLON.initialize.execFunc( settings.execfn, window, element );
+					});
+				} else {
+					SEMICOLON.initialize.execFunc( settings.execfn, window, element );
+				}
+			}
+
+			if( settings.class ) {
+				$body.addClass( settings.class );
+			}
+		},
+
+		jsLinking: function( element, settings ) {
+			if( element.length < 1 ){
+				return false;
+			}
+
+			if( settings.hiddendisable && ( element.filter(':hidden').length == element.length ) ) {
+				return false;
+			}
+
+			let pluginFnExec = Function( 'return ' + settings.pluginfn )(),
+				jsPath = 'js/', file,
+				disableAJAX = false;
+
+			if( typeof scwJsPath !== 'undefined' ) {
+				jsPath = scwJsPath + '/';
+			}
+
+			if( typeof scwDisableJsAJAX !== 'undefined' && scwDisableJsAJAX === true ) {
+				disableAJAX = true;
+			}
+
+			if( /^(f|ht)tps?:\/\//i.test( window.decodeURIComponent( settings.file ) ) ) {
+				file = settings.file;
+			} else {
+				file = jsPath + settings.file;
+			}
+
+			if( pluginFnExec ) {
+				SEMICOLON.initialize.execPlugin( element, settings );
+			} else {
+				if( !disableAJAX ) {
+					$.ajax({
+						url: file,
+						dataType: "script",
+						cache: true,
+						crossDomain: true,
+						timeout: 5000,
+					}).done(function() {
+						SEMICOLON.initialize.execPlugin( element, settings );
+					}).fail(function() {
+						console.log( settings.error );
+					});
+				} else {
+					console.log( settings.error );
+				}
+			}
+		},
+
+		functions: function( settings ){
+			let element, parent, item;
+
+			if( typeof settings.element === 'object' && settings.element !== null ) {
+				if( settings.element.parent !== 'undefined' ) {
+					parent = settings.element.parent;
+				}
+				if( settings.element.el !== 'undefined' ) {
+					settings.element = settings.element.el;
+				}
+			}
+
+			if( settings.element ) {
+				item = settings.element;
+			} else {
+				item = settings.default;
+			}
+
+			if( parent === 'object' ) {
+				element = parent.find( item );
+			} else {
+				element = $( item );
+			}
+
+			this.jsLinking( element, settings );
+		},
+		
 		responsiveClasses: function(){
 
 			if( typeof jRespond === 'undefined' ) {
@@ -2072,7 +2197,7 @@ var SEMICOLON = SEMICOLON || {};
 			SEMICOLON.widget.progress();
 			SEMICOLON.widget.twitterFeed();
 			SEMICOLON.widget.flickrFeed();
-			SEMICOLON.widget.instagramPhotos( '5834720953.1677ed0.a0a26ba4c90845f9a844d64c316bf77a', '8e000fefe3024b2ead6a50ff005bf036' );
+			SEMICOLON.widget.instagramPhotos();
 			SEMICOLON.widget.dribbbleShots( '012d3d72d12f93e1d41a19195d7da2fc87e6b5afa48a184256e398eb793cfe56' );
 			SEMICOLON.widget.navTree();
 			SEMICOLON.widget.textRotater();
@@ -2724,84 +2849,19 @@ var SEMICOLON = SEMICOLON || {};
 			}
 		},
 
-		instagramPhotos: function( c_accessToken, c_clientID ){
+		instagramPhotos: function( element ){
+			let settings = {
+				element: element,
+				default: '.instagram-photos',
+				file: 'plugins.instagram.js',
+				error: 'plugins.instagram.js: Plugin could not be loaded',
+				execfn: 'SEMICOLON_instagramPhotosInit',
+				pluginfn: 'typeof scwInstagramPlugin !== "undefined"',
+				trigger: 'pluginInstagramReady',
+				class: 'has-plugin-instagram'
+			};
 
-			if( typeof Instafeed === 'undefined' ) {
-				console.log('Instafeed not Defined.');
-				return true;
-			}
-
-			var $instagramPhotosEl = $('.instagram-photos');
-			if( $instagramPhotosEl.length > 0 ){
-
-				$instagramPhotosEl.each(function() {
-					var element = $(this),
-						instaGramTarget = element.attr('id'),
-						instaGramUserId = element.attr('data-user'),
-						instaGramTag = element.attr('data-tag'),
-						instaGramLocation = element.attr('data-location'),
-						instaGramCount = element.attr('data-count'),
-						instaGramType = element.attr('data-type'),
-						instaGramSortBy = element.attr('data-sortBy'),
-						instaGramRes = element.attr('data-resolution');
-
-					if( !instaGramCount ) { instaGramCount = 9; }
-					if( !instaGramSortBy ) { instaGramSortBy = 'none'; }
-					if( !instaGramRes ) { instaGramRes = 'thumbnail'; }
-
-					if( instaGramType == 'user' ) {
-
-						var feed = new Instafeed({
-							target: instaGramTarget,
-							get: instaGramType,
-							userId: Number(instaGramUserId),
-							limit: Number(instaGramCount),
-							sortBy: instaGramSortBy,
-							resolution: instaGramRes,
-							accessToken: c_accessToken,
-							clientId: c_clientID
-						});
-
-					} else if( instaGramType == 'tagged' ) {
-
-						var feed = new Instafeed({
-							target: instaGramTarget,
-							get: instaGramType,
-							tagName: instaGramTag,
-							limit: Number(instaGramCount),
-							sortBy: instaGramSortBy,
-							resolution: instaGramRes,
-							clientId: c_clientID
-						});
-
-					} else if( instaGramType == 'location' ) {
-
-						var feed = new Instafeed({
-							target: instaGramTarget,
-							get: instaGramType,
-							locationId: Number(instaGramUserId),
-							limit: Number(instaGramCount),
-							sortBy: instaGramSortBy,
-							resolution: instaGramRes,
-							clientId: c_clientID
-						});
-
-					} else {
-
-						var feed = new Instafeed({
-							target: instaGramTarget,
-							get: 'popular',
-							limit: Number(instaGramCount),
-							sortBy: instaGramSortBy,
-							resolution: instaGramRes,
-							clientId: c_clientID
-						});
-
-					}
-
-					feed.run();
-				});
-			}
+			SEMICOLON.initialize.functions( settings );
 		},
 
 		dribbbleShots: function( c_accessToken ){

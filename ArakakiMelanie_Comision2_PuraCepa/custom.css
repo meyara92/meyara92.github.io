@@ -592,3 +592,15 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     background-image: url(images/hero-3.svg);
 }
 
+.btn-success {
+    color: #fff;
+    background-color: #DB958D;
+    border-color: #DB958D;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #C27A71;
+    border-color: #C27A71;
+}
+
