@@ -139,7 +139,6 @@
 		content: '';
     	position: absolute;
 		top: 50%;
-		left: 100%;
 		width: 150%;
     	border-top: 1px dashed var(--themecolor, #335EEE);
 		transform: translateY(-50%);
