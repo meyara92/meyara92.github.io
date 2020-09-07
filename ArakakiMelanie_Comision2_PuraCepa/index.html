@@ -31,6 +31,8 @@
 	<link rel="stylesheet" href="demos/coworking/coworking.css" type="text/css" /> <!-- Theme CSS -->
 	<link rel="stylesheet" href="demos/seo/seo.css" type="text/css" /> <!-- Theme CSS -->
 	<link rel="stylesheet" href="css/onepage.css" type="text/css" />
+	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
+	<link rel="stylesheet" href="one-page/onepage.css" type="text/css" />
 	<link rel="stylesheet" href="demos/yoga/yoga.css" type="text/css" /> <!-- Yoga Theme Custom CSS -->
 	<link rel="stylesheet" href="custom.css" type="text/css" /> <!-- Theme CSS -->
 	<!-- / -->
@@ -48,20 +50,19 @@
 </head>
 
 <body class="stretched">
-
+	
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
 
+		
 		<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header sticky">
+		<header id="header" class="transparent-header sticky header-size-custom" data-sticky-shrink="false" data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="100">
 
 			<div id="header-wrap">
 
-				<div class="container clearfix">
-
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+				<div class="container">
 
 					<!-- Logo
 					============================================= -->
@@ -70,10 +71,14 @@
 						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
 
+					<div id="primary-menu-trigger">
+						<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+					</div>
+
 					<!-- Primary Navigation
 					============================================= -->
 					<nav id="primary-menu">
-						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+						<ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 							<li><a href="#" data-href="#wrapper"><div>Inicio</div></a></li>
 							<li><a href="#" data-href="#how-it-works"><div>Cómo funciona</div></a></li>
 							<li><a href="#" data-href="#price-container"><div>Suscripción</div></a></li>
@@ -81,11 +86,10 @@
 							<li><a href="#" data-href="#contact"><div>Contacto</div></a></li>
 						</ul>
 					</nav><!-- #primary-menu end -->
-
 				</div>
 
 			</div>
-
+			<div class="header-wrap-clone"></div>
 		</header><!-- #header end -->
 
 		<!-- Slider
@@ -99,7 +103,7 @@
 							<div id="slider-container" class="col-lg-8 col-md-8">
 								<div class="slider-title">
 									<h1 class="top-title mb-0">Todos los meses</h1>
-									<span class="text-rotater mt-0" style="font-family: 'Recoleta Medium'; color: #472e45;" data-separator="|" data-rotate="fadeInUp" data-speed="2400"><span class="t-rotate font-weight-bold opm-large-word">una nueva experiencia|nuevas etiquetas|nuevos sabores</span></span>
+									<span class="text-rotater mt-0" style="font-family: 'Recoleta Medium'; color: #472e45;" data-separator="|" data-rotate="fadeIn" data-speed="2400"><span class="t-rotate font-weight-bold opm-large-word">una nueva experiencia|nuevas etiquetas|nuevos sabores</span></span>
 									<p>Elegir un buen vino no es fácil. Conocer uno nuevo, menos.<br>Por eso creamos Pura Cepa.</p>
 								</div>
 								<a href="#" data-href="#price-container" class="button button-large font-weight-semibold button-rounded ls0 nott ml-0">Unite al club</a>
@@ -155,46 +159,6 @@
 					</div>
 				</div>
 			</div>
-			<!--<div class="content-wrap pt-0 pb-0">
-				<div id="featured-section" class="section bg-theme-accent mt-0 pt-md-5 pt-0 mb-0">
-					<div class="container clearfix">
-						<div class="row align-items-md-center mb-5">
-							<div class="col-md-6 pr-5">
-								<div class="heading-block mb-4 nobottomborder">
-									<div class="before-heading">BENEFICIOS</div>
-									<h2 class="nott t600">¿Por qué Pura Cepa?</h2>
-								</div>
-								<p>Sabemos que te gusta el vino tanto como a nosotrxs. Por eso creamos este club que te invita a conocer nuevos sabores todos los meses. </p>
-								<a href="#" data-href="#price-container" class="button button-rounded" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">Ver cajas</a> 
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="card shadow-sm border-light">
-									<img src="images/benefits/1.png" alt="Featured image 1" class="card-img-top">
-									<div class="card-body">
-										<h4 class="card-title t600">Envío gratis a todo el país</h4>
-										<p class="card-text">Estés donde estés, te llevamos la caja a la puerta de tu casa.</p>
-									</div>
-								</div>
-								<div class="card shadow-sm border-light mt-4">
-									<img src="images/benefits/3.png" alt="Featured image 2" class="card-img-top">
-									<div class="card-body">
-										<h4 class="card-title t600">Cada caja se vuelve mejor</h4>
-										<p class="card-text">Al calificar los vinos, te conocemos mejor cada mes.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 pl-sm-3 mt-3 mt-sm-0">
-								<div class="card shadow-sm border-light">
-									<img src="images/benefits/2.png" alt="Featured image 3" class="card-img-top">
-									<div class="card-body">
-										<h4 class="card-title t600">Descubrí nuevos sabores</h4>
-										<p class="card-text">Tu caja viene con una carta de gustación y una guía del vino.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>-->
 					<!-- About Us
 				============================================= -->
 				<div class="section p-0 mt-0 bg-transparent clearfix" style="border-top: 1px solid #EEE; border-bottom: 1px solid #EEE;">
@@ -398,6 +362,20 @@
 						</div>
 
 						<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget clearfix" data-margin="0" data-pagi="true" data-loop="true" data-center="true" data-autoplay="5000" data-items-sm="1" data-items-md="2" data-items-xl="3">
+							<div class="oc-item">
+								<div class="testimonial">
+									<div class="testi-image">
+										<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+									</div>
+									<div class="testi-content">
+										<p>Tuve la oportunidad de recibir 2 selecciones y el nivel de los vinos es excelente. Argentina produce unos de los mejores vinos del mundo. Es esperable que mi club de vinos favoritos sea de ahí.</p>
+										<div class="testi-meta">
+											Tim Atkin <a href="https://www.instagram.com/timatkinmw" target="_blank">@timatkinmw</a>
+											<span>Wine writer | Master of wine</span>
+										</div>
+									</div>
+								</div>
+							</div>
 
 							<div class="oc-item">
 								<div class="testimonial">
@@ -417,20 +395,6 @@
 							<div class="oc-item">
 								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
-									</div>
-									<div class="testi-content">
-										<p>Tuve la oportunidad de recibir 2 selecciones y el nivel de los vinos es excelente. Argentina produce unos de los mejores vinos del mundo. Es esperable que mi club de vinos favoritos sea de ahí.</p>
-										<div class="testi-meta">
-											Tim Atkin <a href="https://www.instagram.com/timatkinmw" target="_blank">@timatkinmw</a>
-											<span>Wine writer | Master of wine</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="oc-item">
-								<div class="testimonial">
-									<div class="testi-image">
 										<a href="#"><img src="images/testimonials/4.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
@@ -445,20 +409,6 @@
 							<div class="oc-item">
 								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
-									</div>
-									<div class="testi-content">
-										<p>Es un orgullo tener un club argentino de vinos como Pura Cepa. Sin dudas una forma excelente de probar nuevas etiquetas desde la comodidad del hogar.</p>
-										<div class="testi-meta">
-											Valeria Gamper <a href="https://www.instagram.com/valeriagamper" target="_blank">@valeriagamper</a>
-											<span>Mejor Sommelier de la Argentina '19 | Directiva de la Asociación Argentina de Sommeliers</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="oc-item">
-								<div class="testimonial">
-									<div class="testi-image">
 										<a href="#"><img src="images/testimonials/5.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
@@ -466,6 +416,20 @@
 										<div class="testi-meta">
 											Paz Levinson <a href="https://www.instagram.com/pazlevinson/" target="_blank">@pazlevinson</a>
 										<span>Mejor Sommelier de las Américas 2015 APAS ASI | Court of Master sommeliers - Advanced Certificate</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="oc-item">
+								<div class="testimonial">
+									<div class="testi-image">
+										<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+									</div>
+									<div class="testi-content">
+										<p>Es un orgullo tener un club argentino de vinos como Pura Cepa. Sin dudas una forma excelente de probar nuevas etiquetas desde la comodidad del hogar.</p>
+										<div class="testi-meta">
+											Valeria Gamper <a href="https://www.instagram.com/valeriagamper" target="_blank">@valeriagamper</a>
+											<span>Mejor Sommelier de la Argentina '19 | Directiva de la Asociación Argentina de Sommeliers</span>
 										</div>
 									</div>
 								</div>
@@ -538,7 +502,7 @@
 					</div>
 
 				</div>
-				<div class="content-wrap">
+				<div class="section">
 
 					<div class="container clearfix">
 	
@@ -580,13 +544,15 @@
 	
 				</div>
 
-				<div class="section mb-0 pb-0 bg-theme-lighter clearfix" style="padding-top: 120px;">
+				<div class="section mb-0 pb-0 bg-theme-lighter clearfix">
 					<div id="contact" class="container" style="margin-bottom: 360px;">
 						<div class="row">
 							<div class="col-md-6">
-								<div class="before-heading">CONTACTANOS</div>
-									<h2 class="nott t600 display-4" style="color:#543c52;">¿Te quedaron dudas?</h2>
-								<h4 class="t300 mb-4" style="color: #333333;">Escribinos, te responderemos a la brevedad.<br>Tu caja te está esperando.</a></h4>
+								<div class="heading-block">
+									<div class="before-heading">CONTACTANOS</div>
+										<h2 class="nott t600" style="color:#543c52;">¿Te quedaron dudas?</h2>
+									<p class="t300 mb-4 mt-3" style="color: #333333;">Escribinos, te responderemos a la brevedad.</p>
+								</div>
 								<form style="max-width: 36rem;">
 									<div class="form-group">
 										<label for="exampleInputEmail1">Nombre</label>

@@ -1,0 +1,128 @@
+/* ----------------------------------------------------------------
+	CSS Specific to the One Page Module
+
+	Some of the CSS Codes have been modified from the Original
+	style.css File to match the Minimal Styling of this Module
+
+	Version: 6.0.4
+-----------------------------------------------------------------*/
+
+/* Custom Header Size
+-----------------------------------------------------------------*/
+.header-size-custom #logo img {
+	height: 70px;
+}
+
+@media (min-width: 992px) {
+
+	.header-size-custom .header-wrap-clone {
+		height: calc( 70px + 1px );
+	}
+
+	#header.header-size-custom + .include-header {
+		margin-top: calc( -70px - 2px );
+	}
+
+	.header-size-custom .menu-container > .menu-item > .menu-link {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	/* ----------------------------------------------------------------------------
+		Header
+	---------------------------------------------------------------------------- */
+
+	#header.full-header.transparent-header,
+	#header.full-header.transparent-header:not(.border-full-header):not(.sticky-header) #header-wrap {
+		border-bottom-color: transparent !important;
+	}
+
+	#header.full-header:not(.border-full-header):not(.sticky-header) #header-wrap { border-bottom-color: transparent; }
+
+	#header.full-header.transparent-header.border-full-header #header-wrap { border-bottom-color: rgba(0,0,0,0.05); }
+
+	.dark #header.full-header.transparent-header.border-full-header #header-wrap,
+	#header.dark.full-header.transparent-header.border-full-header #header-wrap { border-bottom-color: rgba(255,255,255,0.15); }
+
+	#header.full-header #logo { border-right: 0; }
+
+	#header.full-header .primary-menu > .menu-container {
+		padding-right: 0;
+		margin-right: 0;
+		border-right: 0;
+	}
+
+	#header.show-on-sticky #header-wrap {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	#header.show-on-sticky.sticky-header #header-wrap {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+
+	/* Sticky Header
+	---------------------------------------------------------------------------- */
+
+	#header.sticky-header #header-wrap,
+	#header.full-header.border-full-header.sticky-header #header-wrap {
+		box-shadow: none;
+		border-bottom: 1px solid #F5F5F5 !important;
+		-webkit-backface-visibility: hidden;
+	}
+
+	.dark #header.sticky-header #header-wrap,
+	.dark #header.full-header.border-full-header.sticky-header #header-wrap {
+		border-bottom-color: rgba(255,255,255,0.1) !important;
+	}
+
+
+	/* Side Header
+	---------------------------------------------------------------------------- */
+
+	.side-header #header-wrap { width: 300px !important; }
+
+	/* Primary Menu
+	---------------------------------------------------------------------------- */
+
+	.primary-menu .menu-container .menu-link {
+		padding-left: 22px;
+		padding-right: 22px;
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 3px;
+	}
+
+}
+
+
+/* Side Panel
+---------------------------------------------------------------------------- */
+
+body.side-push-panel.stretched #header .container { right: 0; }
+
+body.side-push-panel.side-panel-open.stretched #header .container { right: 300px; }
+
+body.side-panel-left.side-push-panel.stretched #header .container {
+	left: 0;
+	right: auto;
+}
+
+body.side-panel-left.side-push-panel.side-panel-open.stretched #header .container { left: 300px; }
+
+
+/* ----------------------------------------------------------------------------
+	Page Section
+---------------------------------------------------------------------------- */
+
+.page-section { padding: 120px 0; }
+
+
+
+.font-primary { font-family: 'Source Sans Pro', sans-serif !important; }

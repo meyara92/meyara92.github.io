@@ -71,6 +71,16 @@
     border-radius: 100px !important;
 }
 
+.header-row {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 #featured-section {
     background-image: url(images/benefits-bg-img-1.png), url(images/benefits-bg-img-2.png);
     background-position: right top, left bottom;
@@ -344,6 +354,7 @@ a {
     position: relative;
     font-size: 72px !important;
     font-family: 'Recoleta Medium';
+    line-height: 60px !important;
 }
 
 .subscription-price {
@@ -415,7 +426,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
 }
 
 #testimonials-section {
-    padding: 100px 0 180px;
+    padding: 60px 0 180px;
     }
 
 @media (min-width: 992px) {
@@ -423,33 +434,33 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
         content:none;
     }
 
-.blurslider-gradient {
-    background:-webkit-linear-gradient(left,#ffffff 0%,#eda79f 100%);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    .blurslider-gradient {
+        background:-webkit-linear-gradient(left,#ffffff 0%,#eda79f 100%);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        }
+
+    .tp-opacity { opacity:0.85; }
+
+    #header.sticky-header #header-wrap {
+        background-color: #FFF;
     }
 
-.tp-opacity { opacity:0.85; }
-
-#header.sticky-header #header-wrap {
-    background-color: #FFF;
-}
-
-.card-img-overlay:before {
-    background-color: transparent;
-}
-
-#copyrights {
-    background-color: #231422;
-}
-
-.feature-box h3 {
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: none;
-    margin-bottom: 0;
-    color: #333;
+    .card-img-overlay:before {
+        background-color: transparent;
     }
+
+    #copyrights {
+        background-color: #231422;
+    }
+
+    .feature-box h3 {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: none;
+        margin-bottom: 0;
+        color: #333;
+        }
 }
 
 @media (max-width: 991px) {
@@ -459,6 +470,15 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
         float: left;
         width: 33.3%;
         padding: 0 20px;
+    }
+
+    #primary-menu-trigger {
+        opacity: 1;
+        pointer-events: auto;
+        top: 10px;
+        margin-top: 0;
+        left: 10px;
+        z-index: 1;
     }
 }
 
@@ -501,7 +521,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     }
 
     .slider-img {
-        margin-top: 120px !important;
+        margin-top: 170px !important;
     }
 
     .hero-features {
@@ -541,7 +561,71 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a::after {
     #testimonials-section {
         padding: 30px 0 30px;
     }
+
+    .top-title {
+        display: block;
+        position: relative;
+        font-size: 30px !important;
+        font-family: 'Recoleta Medium';
+        line-height: 30px !important;
+        text-align: center;
+    }
+
+    .slider-title {
+        text-align: center;
+    }
+
+    .opm-large-word {
+        font-size: 30px;
+    }
+
+    .slider-title p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .slider-img {
+        right: 0px;
+        top: 41%;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0 5px 0;
+    }
+
+    #logo {
+        display: block;
+        height: 70px;
+        float: none;
+        margin: 0 auto 0 !important;
+        max-width: none;
+        text-align: center;
+        border: 0 !important;
+        padding: 0 !important;
+    }
+
+    .fbox-img img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .price-features > div {
+        padding: 36px;
+    }
+
+    .testi-image, .testi-image a, .testi-image img, .testi-image i {
+        width: 72px;
+        height: 72px;
+    }
+
 }
+
+
 
 .testimonials-carousel:before {
     content: """;

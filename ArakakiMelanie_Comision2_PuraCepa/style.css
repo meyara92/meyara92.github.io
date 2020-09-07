@@ -974,6 +974,20 @@ html[xmlns] .slider-wrap {display: block;}
 	z-index: 199;
 }
 
+.header-row {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.header-wrap-clone {
+	display: none;
+}
+
 #header.semi-transparent { background-color: rgba(255,255,255,0.8); }
 
 #header.transparent-header.floating-header { margin-top: 60px; }
@@ -1064,6 +1078,43 @@ body.stretched #header.full-header .container {
 #logo a.retina-logo { display: none; }
 
 
+@media (max-width: 991.98px) {
+
+	.sticky-header #header-wrap {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 299;
+		background-color: #FFF;
+		border-bottom: 1px solid #EEE;
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+	}
+
+	.sticky-header .header-wrap-clone {
+		display: block;
+	}
+
+	.sticky-header .menu-container {
+		max-height: 60vh;
+		margin: 1rem 0;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+
+	body:not(.primary-menu-open) .dark.transparent-header-responsive,
+	body:not(.primary-menu-open) .transparent-header-responsive {
+		background-color: transparent;
+		border: none;
+	}
+
+	body:not(.primary-menu-open) .semi-transparent.transparent-header-responsive {
+		background-color: rgba(255,255,255,0.8);
+		z-index: 1;
+	}
+
+}
+
 /* ----------------------------------------------------------------
 	Header Right Area
 -----------------------------------------------------------------*/
@@ -1131,6 +1182,8 @@ body.stretched #header.full-header .container {
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
+	justify-content: center;
+    align-items: center;
 	text-align: center;
 	-webkit-transition: opacity .3s ease;
 	-o-transition: opacity .3s ease;
@@ -1605,6 +1658,10 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 
 	#header.split-menu #logo a.standard-logo { display: inline-block; }
 
+	.header-row {
+		position: initial;
+	}
+
 }
 
 #header.split-menu #primary-menu {
@@ -1723,6 +1780,23 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 	-ms-transform: translateY(0);
 	-o-transform: translateY(0);
 	transform: translateY(0);
+}
+
+.header-wrap-clone {
+	display: block;
+	height: calc( 100px + 1px );
+}
+
+.header-size-sm .header-wrap-clone {
+	height: calc( 60px + 1px );
+}
+
+.header-size-md .header-wrap-clone {
+	height: calc( 80px + 1px );
+}
+
+.header-size-lg .header-wrap-clone {
+	height: calc( 120px + 1px );
 }
 
 }
@@ -2329,6 +2403,68 @@ body:not(.device-touch) #page-menu nav li a {
 
 #page-menu ul ul li:hover a,
 #page-menu ul ul li.current a { background-color: rgba(0,0,0,0.3); }
+
+.svg-trigger {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 400ms;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.svg-trigger path {
+	fill: none;
+	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+	stroke: #333;
+	stroke-width: 5;
+	stroke-linecap:round;
+}
+
+.svg-trigger path:nth-child(1) { stroke-dasharray: 40 160; }
+
+.svg-trigger path:nth-child(2) {
+	stroke-dasharray: 40 142;
+	transform-origin: 50%;
+	transition: transform 400ms;
+}
+
+.svg-trigger path:nth-child(3) {
+	stroke-dasharray: 40 85;
+	transform-origin: 50%;
+	transition: transform 400ms, stroke-dashoffset 400ms;
+}
+
+.overlay-menu.primary-menu-open .primary-menu,
+	.overlay-menu.primary-menu-open #overlay-menu-close {
+		opacity: 1 !important;
+		pointer-events: auto;
+		z-index: 499;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		-webkit-transition: opacity .3s ease, transform .45s ease !important;
+		transition: opacity .3s ease, transform .45s ease !important;
+	}
+
+	.overlay-menu .primary-menu,
+	.overlay-menu.primary-menu-open .primary-menu {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+		-webkit-transition: opacity .3s ease !important;
+		transition: opacity .3s ease !important;
+	}
+
+.primary-menu-open .svg-trigger { transform: rotate(45deg); }
+
+.primary-menu-open .svg-trigger path:nth-child(1),
+.primary-menu-open .svg-trigger path:nth-child(3) { stroke-dashoffset: -64px; }
+
+.primary-menu-open .svg-trigger path:nth-child(2) { transform: rotate(90deg); }
+
+
 
 
 /* Page Menu - Dots Style
