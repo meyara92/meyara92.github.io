@@ -18,6 +18,11 @@
     font-family: "Rubik";
     src: url("assets/Rubik.ttf");
 }
+
+h1 {
+    font-size: 3em !important;
+}
+
 nav{
     background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,1));
     font-family: "Citrus-regular";
@@ -40,6 +45,13 @@ nav ul li{
     font-family: "Citrus-regular";
     padding: 0 15px;
 }
+
+.text-black-back{
+    background-color: black;
+    color: white;
+    padding: 0 15px;
+}
+
 .jumbotron-fluid{
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     color: white;
@@ -190,15 +202,21 @@ p{
     font-family: "Citrus-regular";
 }
 .featurette button{
-    margin-top: 10px;
+    margin-top: 24px;
     width: 160px;
     align-self: center;
 }
 .featurette h1{
     font-size: 54px;
+    margin: 0px;
 }
+
+.featurette p{
+    margin: 0px;
+}
+
 .sponsors h3{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Citrus Gothic', sans-serif;
     text-transform: uppercase;
 }
 .sponsors{
@@ -238,9 +256,8 @@ footer p span{
     background-repeat: no-repeat, no-repeat, repeat;
     background-size: 100%, 100%, auto;
     background-position: top, bottom;
-
-
 }
+
 #section5{
     background-image: url("./assets/images/divider-3-1.png");
     background-repeat: no-repeat;
