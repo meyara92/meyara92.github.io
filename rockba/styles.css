@@ -1,0 +1,276 @@
+@font-face{
+    font-family: "Citrus-inline-italic";
+    src: url("assets/citrus_gothic_fonts/CitrusGothicInline-Italic.otf");
+}
+@font-face{
+    font-family: "Citrus-inline-regular";
+    src: url("assets/citrus_gothic_fonts/CitrusGothicInline-Regular.otf");
+}
+@font-face{
+    font-family: "Citrus-italic";
+    src: url("assets/citrus_gothic_fonts/CitrusGothic-Italic.otf");
+}
+@font-face{
+    font-family: "Citrus-regular";
+    src: url("assets/citrus_gothic_fonts/CitrusGothic-Regular.otf");
+}
+@font-face{
+    font-family: "Rubik";
+    src: url("assets/Rubik.ttf");
+}
+nav{
+    background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,1));
+    font-family: "Citrus-regular";
+}
+nav ul li{
+    cursor: pointer;
+}
+.crossed-title-italic{
+    font-family: "Citrus-inline-italic", sans-serif;
+}
+.regular-title{
+    font-family: "Citrus-regular", sans-serif;
+}
+.italic{
+    font-family: "Citrus-italic",sans-serif!important;
+}
+.text-white-back{
+    background-color: white;
+    color: black;
+    font-family: "Citrus-regular";
+    padding: 0 15px;
+}
+.jumbotron-fluid{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 776px;
+    margin-bottom: 0;
+    background: transparent;
+    background-repeat: no-repeat, repeat;
+    background-image: url('/assets/images/header-fire.png'), url("/assets/images/texture.png");
+    background-size: contain, auto;
+    background-position: bottom;
+}
+.jumbotron-fluid:before{
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    z-index: -1;
+    display: block;
+    background-image: url('assets/images/header-bg.jpg');
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    filter:brightness(80%);
+}
+
+button{
+    border-radius: 0px!important;
+    font-family: "Citrus-regular"!important;
+}
+.btn-warning{
+    background-color: #00dd1a;
+    border: 1px solid  #00dd1a!important;
+}
+.pink-back{
+    padding: 0px 0;
+    background:  #ec008c;
+    background-image: url("/assets/images/texture.png");
+    
+}
+.featt{
+    margin: 48px 0;
+}
+.green-back{
+    background-color: #00dd1a;
+    padding: 50px 0;  
+}
+.green-text{
+    color: #00dd1a;
+}
+.black-back{
+    background-color: black;
+    padding: 50px 0; 
+}
+p{
+    margin-top: 10px;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*sacado de http://embedresponsively.com/*/
+.embed-container { 
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden; 
+    max-width: 100%;
+    height: 100%;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.merch{
+    background-color: white;
+    margin: 15px 0;
+}
+.merch img{
+    width: 100%;
+}
+.feat{
+    margin-bottom: 30px;
+}
+#el-mato{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    z-index: 2;
+}
+.mid-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.mid-content button{
+    width: 160px;
+}
+.border-fire{
+    border: 10px solid transparent;
+    border-image: url(/assets/images/fire-border.png);
+    border-image-slice: 58%;
+    border-image-width: 52%;
+    border-image-repeat: stretch;
+    border-image-outset: 10;
+}
+.merch{
+    text-align: center;
+    padding: 35px 10px;
+}
+.merch img{
+    width: 80%;
+}
+.featurette{
+    margin: 100px auto;
+    width: 60%;
+    background-color: white;
+    padding: 30px 0;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.featurette ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.featurette ul li::before{
+    content: url('/assets/images/thunder-icon.png');
+    position: relative;
+    top: 10px;
+    right: 3px;
+}
+.no-icon::before{
+    content: ""!important;
+}
+
+.featurette span{
+    font-family: "Citrus-regular";
+}
+.featurette button{
+    margin-top: 10px;
+    width: 160px;
+    align-self: center;
+}
+.featurette h1{
+    font-size: 54px;
+}
+.sponsors h3{
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+}
+.sponsors{
+    padding: 50px 0;
+    background-image: url("/assets/images/texture.png");
+}
+.sponsors img{
+    width: 150px;
+    margin: 5px;
+}
+footer{
+    color: white;
+    text-transform: uppercase;
+}
+.social-network img{
+    width: 28px;
+    margin: 5px;
+}
+.social-network{
+    margin-bottom: 30px;
+}
+footer p{
+    margin: 0px;
+}
+footer p span{
+    margin:0 10px;
+}
+#section2{
+    background-image: url("/assets/images/divider-1.png"), url("/assets/images/divider-2-1.png"), url("/assets/images/bg-plus-icons.png"), url("/assets/images/texture.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+    background-size: 100%, 100%, auto, auto;
+    background-position: top, bottom, right bottom;
+}
+
+#section4{
+    background-image: url("/assets/images/divider-2-2.png"), url("/assets/images/divider-3-1.png"), url("/assets/images/texture.png");
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: 100%, 100%, auto;
+    background-position: top, bottom;
+
+
+}
+#section5{
+    background-image: url("/assets/images/divider-3-1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 47px;
+    position: relative;   
+}
+#section6{
+    width: 100%;
+    position: relative;
+    top: -8px;
+}
+#section7{
+    width: 100%;
+}
+.back-triangles{
+    background-image: url("/assets/images/bg-triangles.png"), url("/assets/images/texture.png");
+    background-position: top left, auto;
+    background-repeat: no-repeat, repeat;
+    background-position-y: 60px, 0;
+}
+.texture{
+    background-image: url("/assets/images/texture.png");
+    width: 100%;
+    height: 100%;
+
+}
+
+/*
+#ec008c;
+#00dd1a;
+*/
