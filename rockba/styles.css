@@ -47,7 +47,7 @@ nav ul li{
     margin-bottom: 0;
     background: transparent;
     background-repeat: no-repeat, repeat;
-    background-image: url('/assets/images/header-fire.png'), url("/assets/images/texture.png");
+    background-image: url('./assets/images/header-fire.png'), url("./assets/images/texture.png");
     background-size: contain, auto;
     background-position: bottom;
 }
@@ -59,7 +59,7 @@ nav ul li{
     top:0;
     z-index: -1;
     display: block;
-    background-image: url('assets/images/header-bg.jpg');
+    background-image: url('./assets/images/header-bg.jpg');
     background-size:cover;
     width: 100%;
     height: 100%;
@@ -77,7 +77,7 @@ button{
 .pink-back{
     padding: 0px 0;
     background:  #ec008c;
-    background-image: url("/assets/images/texture.png");
+    background-image: url("./assets/images/texture.png");
     
 }
 .featt{
@@ -143,7 +143,7 @@ p{
 }
 .border-fire{
     border: 10px solid transparent;
-    border-image: url(/assets/images/fire-border.png);
+    border-image: url("./assets/images/fire-border.png");
     border-image-slice: 58%;
     border-image-width: 52%;
     border-image-repeat: stretch;
@@ -177,7 +177,7 @@ p{
     font-weight: bold;
 }
 .featurette ul li::before{
-    content: url('/assets/images/thunder-icon.png');
+    content: url('./assets/images/thunder-icon.png');
     position: relative;
     top: 10px;
     right: 3px;
@@ -203,7 +203,7 @@ p{
 }
 .sponsors{
     padding: 50px 0;
-    background-image: url("/assets/images/texture.png");
+    background-image: url("./assets/images/texture.png");
 }
 .sponsors img{
     width: 150px;
@@ -227,14 +227,14 @@ footer p span{
     margin:0 10px;
 }
 #section2{
-    background-image: url("/assets/images/divider-1.png"), url("/assets/images/divider-2-1.png"), url("/assets/images/bg-plus-icons.png"), url("/assets/images/texture.png");
+    background-image: url("./assets/images/divider-1.png"), url("./assets/images/divider-2-1.png"), url("./assets/images/bg-plus-icons.png"), url("./assets/images/texture.png");
     background-repeat: no-repeat, no-repeat, no-repeat, repeat;
     background-size: 100%, 100%, auto, auto;
     background-position: top, bottom, right bottom;
 }
 
 #section4{
-    background-image: url("/assets/images/divider-2-2.png"), url("/assets/images/divider-3-1.png"), url("/assets/images/texture.png");
+    background-image: url("./assets/images/divider-2-2.png"), url("./assets/images/divider-3-1.png"), url("./assets/images/texture.png");
     background-repeat: no-repeat, no-repeat, repeat;
     background-size: 100%, 100%, auto;
     background-position: top, bottom;
@@ -242,7 +242,7 @@ footer p span{
 
 }
 #section5{
-    background-image: url("/assets/images/divider-3-1.png");
+    background-image: url("./assets/images/divider-3-1.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -258,13 +258,13 @@ footer p span{
     width: 100%;
 }
 .back-triangles{
-    background-image: url("/assets/images/bg-triangles.png"), url("/assets/images/texture.png");
+    background-image: url("./assets/images/bg-triangles.png"), url("./assets/images/texture.png");
     background-position: top left, auto;
     background-repeat: no-repeat, repeat;
     background-position-y: 60px, 0;
 }
 .texture{
-    background-image: url("/assets/images/texture.png");
+    background-image: url("./assets/images/texture.png");
     width: 100%;
     height: 100%;
 
