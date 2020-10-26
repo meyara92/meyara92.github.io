@@ -83,6 +83,10 @@ button{
     font-family: "Citrus-regular"!important;
 }
 
+.btn {
+    font-size: 1.2em;
+}
+
 .btn-warning:hover{
     background-color: #02b116;
     border: 1px solid #02b116!important;
@@ -194,7 +198,10 @@ p{
     list-style: none;
     margin: 10px 0;
     font-weight: bold;
+    font-size: 1.1em;
+    font-family: 'Citrus Gothic';
 }
+
 .featurette ul li::before{
     content: url('./assets/images/thunder-icon.png');
     position: relative;
