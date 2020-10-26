@@ -82,10 +82,17 @@ button{
     border-radius: 0px!important;
     font-family: "Citrus-regular"!important;
 }
+
+.btn-warning:hover{
+    background-color: #02b116;
+    border: 1px solid #02b116!important;
+}
+
 .btn-warning{
     background-color: #00dd1a;
     border: 1px solid  #00dd1a!important;
 }
+
 .pink-back{
     padding: 0px 0;
     background:  #ec008c;
